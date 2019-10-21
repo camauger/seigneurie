@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- cree par Prospection www.prospection.qc.ca -->
+
+<url>
+  <loc>https://seigneurieiledorleans.com/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/nous-joindre/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/panier/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/la-seigneurie/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/la-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/activites/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/le-blogue-de-mary/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/chandelle-la-bleuetiere/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/exfoliant-pour-les-mains/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/poule-de-luxe-100-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/la-lavande/tisane-a-la-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/la-seigneurie/nos-jardins-et-visite-des-lieux/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/la-seigneurie/histoire/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/la-seigneurie/visites-et-forfaits/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.94</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/mariages-et-evenements/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.92</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/la-lavande/lavande-plante-des-dieux/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/la-lavande/sante/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/la-lavande/beaute/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/au-gre-de-mes-inspirations/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/certificats-cadeaux/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/cheveux/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/apothicaire-hildgard/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/la-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/les-essentiels-au-quotidien/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/mademoiselle-hildegard/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/parfum/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/plein-air/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/pour-le-bain/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/pour-le-bain/bombes-de-bain/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/pour-le-bain/savons/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/pour-les-tout-petits/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/soins-pour-femme/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/soins-pour-femme/corps/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/soins-pour-femme/masque/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/soins-pour-femme/viniflora/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/soins-pour-femme/visage/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/soins-pour-homme/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/spectacles/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/categorie-produit/en-page-daccueil/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/activite/vivez-la-magie-dun-spectacle/?ids=1413</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/parfum-dambiance-lime-et-coriandre-250ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/nettoyant-a-mains-aux-agrumes-250ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/gel-antibacterien-50-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/chandelle-lavande-et-agrumes/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/creme-a-main-en-barre/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/creme-a-main-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/baume-pour-les-ongles-grand/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/creme-a-raser-pour-femme/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/antisudorifique/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/demaquillant-bi-phase/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/baume-pour-les-ongles-petit/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/la-lavande/sachet-de-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/la-lavande/huile-essentielle-15-ml-copier/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/la-lavande/eau-de-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/baume-a-levre/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/gel-de-massage-huile-dargan/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/mousse-lavante-craquante/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/au-gre-de-mes-inspirations/voile-poudre-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/certificats-cadeaux/certificat-cadeau/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/certificats-cadeaux/certificat-cadeau-2/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/certificats-cadeaux/certificat-cadeau-3/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/certificats-cadeaux/certificat-cadeau-4/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/cheveux/creme-hydratante-et-coiffante-sans-rincage/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/cheveux/revitalisant-ayurvedique-aux-fleurs-dhibiscus/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/cheveux/shampoing-en-barre-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/cheveux/shampoing-en-barre-lavande-et-clementine/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/cheveux/shampoing-ayurvedique/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/baume-immunitaire/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/baume-immunitaire-en-baume-musculaire/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/baume-musculaire-en-baume-de-massage/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/baume-musculaire/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/elixir-deole/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/elixir-de-cybele/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/elixir-de-gaia/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/elixir-de-neptune/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/elixir-de-vulcain/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/face-a-face/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/gel-circulatoire/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/mine-de-charbon-110gr/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/onguent-consoude-creme-ultra-cicatrisante-50-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/savon-dargousier/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/souplesse/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/la-lavande/eau-de-lavande-copier-copier/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/la-lavande/eau-de-lavande-copier/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/la-lavande/miel-de-fleurs-de-lavande-300ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/la-lavande/sachet-de-lavande-petit/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/chandelle-lheure-du-the/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/chandelle-la-paparmane/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/chandelle-la-peche-melba/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/chandelle-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/diffuseur-roseau-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/eau-de-linge-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/nettoyant-a-main-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/nettoyant-a-main-lavande-et-bambou/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/nettoyant-a-main-pomme-et-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/nettoyant-a-main-respire/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/nettoyant-a-mains-lime-coriandre-250ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/parfum-dambiance-lavande-250ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/parfum-dambiance-lavande-et-agrumes-250ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/parfum-dambiance-lavande-et-bambou/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/parfum-dambiance-pommette-et-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/les-essentiels-au-quotidien/parfum-dambiance-respire/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/mademoiselle-hildegard/folle-de-moi/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/gel-regulateur-de-sebum/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/mademoiselle-hildegard/purete/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/mademoiselle-hildegard/reveille-moi/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/parfum/parfum-lavande-et-fruits/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/parfum/parfum-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/parfum/parfum-lavande-et-poire/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/parfum/mi-figue-mi-raisin-parfum/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/parfum/parfum-coquinette-a-croquer-50ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/parfum/si-jamais-parfum/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/plein-air/apres-soleil-200-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/plein-air/creme-solaire-fps-25-200ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/plein-air/le-chasse-moustique-100-naturel-sans-deet-120-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/plein-air/le-chasse-moustique-100-naturel-sans-deet-250-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/une-envie-dete-creme-solaire-visage-30-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/une-envie-dete-creme-solaire-visage-60ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/bain-moussant-au-the-vert-et-lavande-250ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/beurre-moussant-corporel/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/bleu-ciel/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/bombes-de-bain/bombe-de-bain-bleuet-et-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/bombes-de-bain/bombe-de-bain-figue-et-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/bombes-de-bain/bombe-de-bain-fleurs-blanches/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/bombes-de-bain/bombe-de-bain-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/bombes-de-bain/bombe-de-bain-lavande-et-eucalyptus/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/bombes-de-bain/bombe-de-bain-poire-et-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/bombes-de-bain/bombe-de-bain-rose/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/bombes-de-bain/bombe-de-bain-salade-de-fruits/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/pomme-damour/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/creme-de-douche-lactee-viniflora/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/nuage-de-lotus/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/exfoliant-moussant-visage-et-corps/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/gel-de-douche-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-les-tout-petits/gel-douche-corps-et-cheveux-200ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/gel-douche-et-bain-moussant-poule-de-luxe/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/jus-de-fruits/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/la-douceur-de-venus/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/lait-de-corps-sous-la-douche/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/lait-de-poule/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/le-bain-de-cleopatre/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/miel-et-ses-ecorces/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/mousse-de-bain-lavande-lotus-blanc/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-les-tout-petits/petit-ange/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/poire-william/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/rose-exquise/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/savon-du-pays-100gr/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/savon-figue-du-desert/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/la-mer-250ml-lavande/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/sel-de-bain-lavande-et-agrumes/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/la-mer-250ml-eucalyptus/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/sel-de-bain-lavande-et-miel/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/tarte-a-la-citrouille/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-homme/savon-terre-dhomme/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/tomate-confite/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-le-bain/savons/menthe-givree/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-les-tout-petits/bebe-vapo-rhume/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-les-tout-petits/creme-de-corps-pois-de-senteur-et-lavande-100ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/pour-les-tout-petits/creme-ultra-cicatrisante/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/creme-de-jour-lavande-et-rose/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-homme/les-pieds-du-colosse/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/divine-serum-30-ml-plus-de-40-ans/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/eau-micellaire-purifiante-viniflora/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/gommage-aux-grains-de-sucre/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/lait-de-corps-lavande-150-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/lait-de-corps-lavande-et-lotus-blanc-150-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/le-cadeau-disis/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/masque-de-penelope-120ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/masque-hydratant-tout-concombre/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/masque-repulpant-viniflora/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/nettoyant-visage-a-lavoine-150ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/secret-du-desert/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/serum-eclat-taches-brunes/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/serum-precieux-visage/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/serum-precieux-yeux-et-levres/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/souffle-pour-le-corps-viniflora/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/sublime-anticerne-et-antiride-45-ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/visage-peau-neuve-viniflora/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-femme/voile-generateur-de-nuit/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-homme/creme-a-raser-pour-homme/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-homme/creme-de-jour-terre-dhomme/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-homme/deodorant-pour-homme/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-homme/gel-douche-corps-et-cheveux-150ml/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-homme/le-coq-du-village-huile-a-barbe/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-homme/le-coq-du-village-nettoyant-a-barbe/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/boutique/soins-pour-homme/parfum-terre-dhomme/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/activites/?wpv-category=spectacle,%20evenement</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://seigneurieiledorleans.com/activites/?wpv-category=a-la-une</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+</urlset>

@@ -1,0 +1,645 @@
+# Translation of Plugins - WooCommerce Print Invoice &amp; Delivery Note - Development (trunk) in French (France)
+# This file is distributed under the same license as the Plugins - WooCommerce Print Invoice &amp; Delivery Note - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-12-29 13:03:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - WooCommerce Print Invoice &amp; Delivery Note - Development (trunk)\n"
+
+#: woocommerce-delivery-notes.php:293
+msgid "This plugin is not useful to me."
+msgstr "Cette extension ne m’est pas utile."
+
+#: woocommerce-delivery-notes.php:287
+msgid "The plugin is not compatible with another plugin."
+msgstr "Cette extension n’est pas compatible avec une autre extension."
+
+#: includes/wcdn-all-component.php:126
+msgid "Allow your customers to pay extra for delivery for certain Weekdays/Dates from Product Delivery Date Pro for WooCommerce. <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/checkout?edd_action=add_to_cart&download_id=16&utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Have it now!</a></strong>."
+msgstr "Autorisez vos clients à payer plus pour une livraison un certain jour de la semaine ou une certaine date depuis « date de livraison de produit Pro pour WooCommerce ». <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/checkout?edd_action=add_to_cart&download_id=16&utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Obtenez-la dès maintenant !</a></strong>."
+
+#: woocommerce-delivery-notes.php:281
+msgid "The invoice sent through mail can't be downloaded as PDF directly."
+msgstr "La facture d’achat envoyée par e-mail ne peut pas être téléchargée sous format PDF directement."
+
+#: woocommerce-delivery-notes.php:275
+msgid "I can't differentiate between Invoice, Delivery Notes & Receipt. The templates are the same. "
+msgstr "Je ne peux pas faire la différence entre facture d’achat, bons de livraison et reçu. Les modèles sont les mêmes."
+
+#: includes/wcdn-all-component.php:128
+msgid "Customers can now edit the Delivery date & time on cart and checkout page or they can reschedule the deliveries for the already placed orders from Product Delivery Date Pro for WooCommerce. <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/checkout?edd_action=add_to_cart&download_id=16&utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Have it now!</a></strong>."
+msgstr "Les clients peuvent désormais modifier la date et l’heure de livraison sur le panier et la page de facturation ou ils peuvent replanifier les livraisons pour les commandes déjà passées depuis Product Delivery Date Pro for WooCommerce. <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/checkout?edd_action=add_to_cart&download_id=16&utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Obtenez-la maintenant !</a></strong>."
+
+#: includes/wcdn-all-component.php:124
+msgid "You can now view all your deliveries in list view or in calendar view from Product Delivery Date Pro for WooCommerce. <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/checkout?edd_action=add_to_cart&download_id=16&utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Get it now!</a></strong>."
+msgstr "Voius pouvez voir toutes vos livraisons sous forme de vue liste ou de calendrier depuis Product Delivery Date Pro for WooCommerce. <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/checkout?edd_action=add_to_cart&download_id=16&utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Obtenez-le maintenant !</a></strong>."
+
+#: includes/component/welcome-page/ts-welcome.php:167
+msgid "Welcome to %s %s"
+msgstr "Bienvenue sur %s %s"
+
+#: includes/component/tracking-data/ts-tracking.php:312
+msgid "No thanks"
+msgstr "Non merci"
+
+#: includes/component/tracking-data/ts-tracking.php:311
+msgid "Allow"
+msgstr "Autoriser"
+
+#: includes/component/tracking-data/ts-tracking.php:225
+msgid "Once in a Week"
+msgstr "Une fois par semaine"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:76
+msgid "Submit & Deactivate"
+msgstr "Envoyer & Désactiver"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:75
+msgid "If you have a moment, please let us know why you are deactivating"
+msgstr "Si vous avez un moment, veuillez nous laisser savoir pourquoi vous désactivez"
+
+#: includes/component/faq-support/ts-faq-support.php:127
+msgid "Frequently Asked Questions for %s"
+msgstr "Foire aux questions pour %s"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:91
+msgctxt "the text of the 'other' reason for deactivating the plugin that is shown in the modal box."
+msgid "Other"
+msgstr "Autre"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:79
+msgid "Yes - Deactivate"
+msgstr "Oui - Désactiver"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:78
+msgid "Cancel"
+msgstr "Annuler"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:77
+msgid "Deactivate"
+msgstr "Désactiver"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:83
+msgid "I found a better plugin"
+msgstr "J’ai trouvé une meilleure extension"
+
+#: includes/wcdn-all-component.php:122
+msgid "Never login to your admin to check your deliveries by syncing the delivery dates to the Google Calendar from Product Delivery Date Pro for WooCommerce. <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/checkout?edd_action=add_to_cart&download_id=16&utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Get it now!</a></strong>"
+msgstr "Ne vous connectez jamais à votre compte administrateur pour vérifier vos livraison grâce à la synchronisation des dates de livraison au calendrier Google depuis « date de livraison de produit Pro pour WooCommerce » . <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/checkout?edd_action=add_to_cart&download_id=16&utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Obtenez-la dès maintenant !</a></strong>"
+
+#: includes/component/faq-support/ts-faq-support.php:176
+msgid "FAQ & Support"
+msgstr "FAQ & Support"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:89
+msgid "What feature?"
+msgstr "Quelle fonctionnalité ?"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:90
+msgid "I don't like to share my information with you"
+msgstr "Je n’aime pas partager mes données avec vous"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:86
+msgid "The plugin is not working"
+msgstr "L’extension ne fonctionne pas"
+
+#: includes/component/tracking-data/ts-tracking.php:120
+#: includes/component/tracking-data/ts-tracking.php:180
+msgid "Reset usage tracking"
+msgstr "Réinitialiser le suivi d’utilisation"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:87
+msgid "Kindly share what didn't work so we can fix it for future users..."
+msgstr "Veuillez partager avec nous ce qui n’a pas fonctionné afin que nous puissions le corriger pour les futurs utilisateurs…"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:74
+msgid "If you want to change the default invoice numbers & set some numbering scheme of your own, then you can set it here with a starting invoice number, a prefix & suffix. For example, you could set it as: TS/001/17-18."
+msgstr "Si vous voulez changer le numéro de facture par défaut et définir votre propre numérotation, vous pouvez alors la définir ici avec un numéro de facturation de départ, un préfixe & suffixe. Par exemple, vous pouvez le définir sur : TS/001/17-18."
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:88
+msgid "The plugin is great, but I need specific feature that you don't support"
+msgstr "L’extension est géniale, mais j’ai besoin d'une fonctionnalité spécifique que vous ne possédez pas"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:84
+msgid "What's the plugin's name?"
+msgstr "Quel est le nom de l’extension ?"
+
+#: includes/component/tracking-data/ts-tracking.php:122
+msgid "This will reset your usage tracking settings, causing it to show the opt-in banner again and not sending any data"
+msgstr "Cela va réinitialiser vos réglages de suivi d'utilisation, causant l’affichage de la bannière d’accord de nouveau et n’enverra aucune donnée"
+
+#: includes/component/deactivate-survey-popup/class-ts-deactivation.php:85
+msgid "I only needed the plugin for a short period"
+msgstr "Je n’avais besoin de l’extension que pour une courte période de temps"
+
+#: includes/wcdn-all-component.php:120
+msgid "Thank you for using WooCommerce Print Invoice & Delivery Note plugin! Now make your deliveries more accurate by allowing customers to select their preferred delivery date & time from Product Delivery Date Pro for WooCommerce. <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/?utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Get it now!</a></strong>"
+msgstr "Merci d’utiliser l’extension impression de facture et bons de livraison pour WooCommerce ! Rendez vos livraisons plus justes en autorisant les clients à choisir leur date et heure préférées pour la livraison depuis « date de livraison de produit Pro pour WooCommerce ». <strong><a target=\"_blank\" href= \"https://www.tychesoftwares.com/store/premium-plugins/product-delivery-date-pro-for-woocommerce/?utm_source=wpnotice&utm_medium=first&utm_campaign=PrintInvoicePlugin\">Obtenez-la dès maintenant !</a></strong>"
+
+#: includes/component/welcome-page/templates/social-media-elements.php:10
+#: includes/wcdn-welcome.php:231
+msgid "Follow %s"
+msgstr "Suivre %s"
+
+#: includes/wcdn-welcome.php:186
+msgid "Current Offers"
+msgstr "Offres actuelles"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:91
+#: includes/wcdn-welcome.php:171
+msgid "View all Premium Plugins"
+msgstr "Voir toutes les extensions Premium"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:90
+#: includes/wcdn-welcome.php:170
+msgid "Visit the Tyche Softwares Website"
+msgstr "Visiter le site Tyche Softwares"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:76
+#: includes/wcdn-welcome.php:156
+msgid "Click Here to Enable Invoice Numbering"
+msgstr "Cliquez ici pour activer la numérotation des factures"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:72
+#: includes/wcdn-welcome.php:152
+msgid "Enable Invoice Numbering"
+msgstr "Activer la numérotation des factures"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:87
+#: includes/wcdn-welcome.php:167
+msgid "Getting to Know Tyche Softwares"
+msgstr "Découvrir Tyche Softwares"
+
+#: includes/wcdn-welcome.php:154
+msgid "f you want to change the default invoice numbers & set some numbering scheme of your own, then you can set it here with a starting invoice number, a prefix & suffix. For example, you could set it as: TS/001/17-18."
+msgstr "Si vous souhaitez changer la numérotation par défaut des factures et définir votre propre numérotation, vous pouvez la définir ici avec un numéro de départ, un préfixe et un suffixe. Par exemple, vous pouvez le définir sur :TS/001/17-18."
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:29
+#: includes/wcdn-welcome.php:109
+msgid "Get Started with WooCommerce Print Invoice & Delivery Note"
+msgstr "Bien commencer avec WooCommerce impression de facture et bon de commande"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:52
+#: includes/wcdn-welcome.php:132
+msgid "Enable Print button for Customers."
+msgstr "Activer le bouton « Imprimer » pour les clients."
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:37
+#: includes/wcdn-welcome.php:117
+msgid "Add settings"
+msgstr "Ajouter des réglages"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:39
+#: includes/wcdn-welcome.php:119
+msgid "To enable the print functionality for your invoices, delivery notes & receipts, you just need to set it up under WooCommerce -> Settings -> Print page. Here you can also setup the Company Logo that will appear on the printed items, Company Address & other information."
+msgstr "Afin d’activer la fonctionnalité d’impression pour vos factures, bons de livraison et reçus, vous devez juste le mettre en place sous WooCommerce -> Réglages -> Imprimer la page. Ici, vous pourrez également configurer le logo de l’entreprise, qui apparaitra sur les éléments imprimés, l’adresse de l’entreprise et d’autres informations."
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:100
+#: includes/wcdn-welcome.php:180
+msgid "Meet the team"
+msgstr "Rencontrer l’équipe"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:41
+#: includes/wcdn-welcome.php:121
+msgid "Click Here to go to Print page"
+msgstr "Cliquez ici pour vous diriger vers la page d’impression"
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:19
+#: includes/wcdn-welcome.php:99
+msgid "Thank you for activating or updating to the latest version of WooCommerce Print Invoice & Delivery Note! If you're a first time user, welcome! You're well on your way to explore the print functionality for your WooCommerce orders."
+msgstr "Merci d’avoir activé ou mis à jour à la version la plus récente de WooCommerce Print Invoice & Delivery ! Si vous êtes un nouvel utilisateur, bienvenue ! Vous êtes sur le bon chemin pour découvrir la fonctionnalité d’impression pour vos commandes WooCommerce."
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:56
+#: includes/wcdn-welcome.php:136
+msgid "Click Here to Enable Print button for Customers"
+msgstr "Cliquez ici pour activer le bouton d’impression pour les clients."
+
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:54
+#: includes/wcdn-welcome.php:134
+msgid "Allow customers to print the WooCommerce order invoice from the customer notification email, from the My Account page or from the View Order page under My Account."
+msgstr "Autorisez vos clients à imprimer la facture de commande de WooCommerce depuis l’e-mail de notification client, depuis la page « Mon compte » ou depuis la page « Voir la commande » sous « Mon compte » ."
+
+#: includes/wcdn-welcome.php:54
+msgid "Welcome to WooCommerce Print Invoice & Delivery Note %s"
+msgstr "Bienvenue sur WooCommerce Print Invoice & Delivery Note %s"
+
+#: includes/wcdn-welcome.php:55
+msgid "Welcome to WooCommerce Print Invoice & Delivery Note"
+msgstr "Bienvenue sur WooCommerce Print Invoice & Delivery Note"
+
+#: includes/class-wcdn-settings.php:114
+msgid "The default print style. Read the <a href=\"%1$s\">FAQ</a> to learn how to customize it."
+msgstr "Le modèle d’impression par défaut. Lisez la <a href=\"%1$s\">FAQ</a> afin d’apprendre comment le personnaliser."
+
+#: includes/class-wcdn-settings.php:275
+msgid "Number Suffix"
+msgstr "Suffixe du numéro"
+
+#: includes/class-wcdn-settings.php:264
+msgid "Number Prefix"
+msgstr "Préfixe du numéro"
+
+#: includes/class-wcdn-settings.php:260
+msgid "The next invoice number."
+msgstr "Le prochain numéro de facture."
+
+#: includes/class-wcdn-settings.php:253
+msgid "Next Number"
+msgstr "Prochain numéro"
+
+#: includes/class-wcdn-settings.php:244
+msgid "Numbering"
+msgstr "Numérotation"
+
+#: includes/class-wcdn-settings.php:165
+msgid "Add the shop policies, conditions, etc."
+msgstr "Ajouter les politiques de la boutique, les conditions, etc."
+
+#: includes/class-wcdn-settings.php:164
+msgid "Policies"
+msgstr "Politiques"
+
+#: includes/class-wcdn-settings.php:155
+msgid "Add a personal close, notes or season greetings."
+msgstr "Ajouter une formule de politesse personnalisée, des notes ou salutations de saison."
+
+#: includes/class-wcdn-settings.php:144
+msgid "Shop Address"
+msgstr "Adresse de la boutique"
+
+#: includes/class-wcdn-settings.php:134
+msgid "Shop Name"
+msgstr "Nom de la boutique"
+
+#: includes/class-wcdn-settings.php:124
+msgid "Shop Logo"
+msgstr "Logo de la boutique"
+
+#: includes/class-wcdn-settings.php:106
+msgid "Template"
+msgstr "Modèle"
+
+#. Author of the plugin/theme
+msgid "Tyche Softwares"
+msgstr "Tyche Softwares"
+
+#. #-#-#-#-#  woocommerce-delivery-notes-code.pot (WooCommerce Print Invoice &
+#. Delivery Note 4.4.7)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  woocommerce-delivery-notes-code.pot (WooCommerce Print Invoice &
+#. Delivery Note 4.4.7)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://www.tychesoftwares.com/"
+msgstr "https://www.tychesoftwares.com/"
+
+#: includes/wcdn-template-functions.php:253
+msgid "Invoice Date"
+msgstr "Date de facturation"
+
+#: includes/class-wcdn-settings.php:435
+msgid "Select"
+msgstr "Selectionner"
+
+#: includes/class-wcdn-settings.php:327
+msgid "Admin"
+msgstr "Administrateur"
+
+#: includes/class-wcdn-settings.php:189
+msgid "Pages & Buttons"
+msgstr "Pages et Boutons"
+
+#: includes/class-wcdn-print.php:69
+msgid "Show \"Print Receipt\" button"
+msgstr "Afficher le bouton « Imprimer le reçu » "
+
+#: includes/class-wcdn-print.php:57
+msgid "Show \"Print Delivery Note\" button"
+msgstr "Afficher le bouton « Imprimer le bon de livraison » "
+
+#: includes/class-wcdn-print.php:45
+msgid "Show \"Print Invoice\" button"
+msgstr "Afficher le bouton « Imprimer la facture » "
+
+#: includes/class-wcdn-settings.php:330
+msgid "The print buttons are available on the order listing and on the order detail screen."
+msgstr "Les boutons d’impression sont disponibles sur la liste de commande ainsi que sur l’écran de détails de la commande."
+
+#: includes/class-wcdn-settings.php:145
+msgid "The postal address of the shop or even e-mail or telephone."
+msgstr "L’adresse postale de la boutique ou même l’adresse e-mail ou le numéro de téléphone."
+
+#: includes/class-wcdn-settings.php:439
+msgid "Remove"
+msgstr "Retirer"
+
+#: includes/class-wcdn-print.php:93
+msgid "Default"
+msgstr "Par défaut"
+
+#: includes/class-wcdn-settings.php:175
+msgid "Add a footer imprint, instructions, copyright notes, e-mail, telephone, etc."
+msgstr "Ajouter une note de bas de page, des instructions, des notes de droit d’auteur, adresse e-mail, numéro de téléphone, etc."
+
+#: includes/class-wcdn-settings.php:130
+msgid "A shop logo representing your business. When the image is printed, its pixel density will automatically be eight times higher than the original. This means, 1 printed inch will correspond to about 288 pixels on the screen."
+msgstr "Un logo représentant votre entreprise. Lorsque l’image est imprimée, sa densité de pixels va automatiquement être multipliée par huit en comparaison à l’originale. Cela signifie, 1 pouce imprimé correspondra à environ 288 pixels sur l’écran."
+
+#: includes/class-wcdn-settings.php:372
+msgid "This section lets you customise the content. You can preview the <a href=\"%1$s\" target=\"%4$s\" class=\"%5$s\">invoice</a>, <a href=\"%2$s\" target=\"%4$s\" class=\"%5$s\">delivery note</a> or <a href=\"%3$s\" target=\"%4$s\" class=\"%5$s\">receipt</a> template."
+msgstr "Cette section vous laisse personnaliser le contenu. Vous pouvez prévisualiser le modèle de <a href=\"%1$s\" target=\"%4$s\" class=\"%5$s\">facture</a>, <a href=\"%2$s\" target=\"%4$s\" class=\"%5$s\">bon de livraison</a> ou <a href=\"%3$s\" target=\"%4$s\" class=\"%5$s\">de reçu</a>."
+
+#: includes/class-wcdn-settings.php:75 includes/class-wcdn-theme.php:57
+#: includes/class-wcdn-theme.php:94 includes/wcdn-template-functions.php:130
+msgid "Print"
+msgstr "Imprimer"
+
+#: includes/class-wcdn-print.php:80
+msgid "Print Order"
+msgstr "Imprimer la commande"
+
+#: includes/class-wcdn-settings.php:174
+msgid "Footer"
+msgstr "Pied de page"
+
+#: includes/wcdn-template-functions.php:246
+msgid "Invoice Number"
+msgstr "Numéro de facture"
+
+#: includes/class-wcdn-settings.php:245
+msgid "Create invoice numbers"
+msgstr "Créer les numéros de facture"
+
+#: includes/class-wcdn-print.php:41
+msgid "Print Invoice"
+msgstr "Imprimer la facture"
+
+#: includes/class-wcdn-print.php:53
+msgid "Print Delivery Note"
+msgstr "Imprimer le bon de livraison"
+
+#: includes/class-wcdn-writepanel.php:232
+msgid "Order Printing"
+msgstr "Imprimer la Commande"
+
+#: includes/class-wcdn-print.php:39 includes/class-wcdn-settings.php:237
+msgid "Invoice"
+msgstr "Facture"
+
+#: includes/class-wcdn-print.php:51
+msgid "Delivery Note"
+msgstr "Bon de livraison"
+
+#: includes/class-wcdn-print.php:78
+msgid "Order"
+msgstr "Commande"
+
+#: includes/wcdn-template-functions.php:259
+msgid "Order Number"
+msgstr "Numéro de commande"
+
+#: includes/wcdn-template-functions.php:282
+msgid "Telephone"
+msgstr "Téléphone"
+
+#: templates/print-order/print-content.php:28
+msgid "Billing Address"
+msgstr "Adresse de facturation"
+
+#: templates/print-order/print-content.php:31
+#: templates/print-order/print-content.php:40
+msgid "N/A"
+msgstr "N/A"
+
+#: templates/print-order/print-content.php:71
+msgid "Product"
+msgstr "Produit"
+
+#: templates/print-order/print-content.php:73
+msgid "Quantity"
+msgstr "Quantité"
+
+#: templates/print-order/print-content.php:218
+msgid "Customer Note"
+msgstr "Note du client"
+
+#: includes/class-wcdn-settings.php:113
+msgid "Style"
+msgstr "Style"
+
+#: templates/print-order/print-content.php:72
+msgid "Price"
+msgstr "Prix"
+
+#: templates/print-order/print-content.php:74
+msgid "Total"
+msgstr "Total"
+
+#: includes/class-wcdn-print.php:64
+msgid "Receipts"
+msgstr "Reçus"
+
+#: includes/class-wcdn-settings.php:215
+msgid "My Account"
+msgstr "Mon compte"
+
+#: includes/class-wcdn-print.php:81
+msgid "Print Orders"
+msgstr "Imprimer les commandes"
+
+#: includes/class-wcdn-print.php:79
+msgid "Orders"
+msgstr "Commandes"
+
+#: includes/class-wcdn-print.php:68
+msgid "Receipts created."
+msgstr "Reçus créés."
+
+#: includes/class-wcdn-print.php:67
+msgid "Receipt created."
+msgstr "Reçu créé."
+
+#: includes/class-wcdn-print.php:66
+msgid "Print Receipts"
+msgstr "Imprimer les reçus"
+
+#: includes/class-wcdn-print.php:55
+msgid "Delivery Note created."
+msgstr "Bon de livraison créé."
+
+#: includes/class-wcdn-print.php:54
+msgid "Print Delivery Notes"
+msgstr "Imprimer les bons de livraison"
+
+#: includes/class-wcdn-print.php:52
+msgid "Delivery Notes"
+msgstr "Bons de livraison"
+
+#: includes/class-wcdn-print.php:44
+msgid "Invoices created."
+msgstr "Factures créées."
+
+#: includes/class-wcdn-print.php:43
+msgid "Invoice created."
+msgstr "Facture créée."
+
+#: includes/wcdn-template-functions.php:441
+msgid "Order Subtotal"
+msgstr "Sous-total de la commande"
+
+#: includes/wcdn-template-functions.php:429
+msgid "Refund"
+msgstr "Remboursement"
+
+#: includes/wcdn-template-functions.php:409
+#: includes/wcdn-template-functions.php:413
+msgid "(Includes %s)"
+msgstr "(Inclus %s)"
+
+#: includes/class-wcdn-theme.php:112
+msgid "Print your order"
+msgstr "Imprimez votre commande"
+
+#: includes/class-wcdn-print.php:42
+msgid "Print Invoices"
+msgstr "Imprimer les factures"
+
+#: includes/class-wcdn-print.php:40
+msgid "Invoices"
+msgstr "Factures"
+
+#: templates/print-order/print-content.php:163
+msgid "%s Files"
+msgstr "%s fichiers"
+
+#: templates/print-order/print-content.php:37
+msgid "Shipping Address"
+msgstr "Adresse de Livraison"
+
+#: includes/class-wcdn-writepanel.php:218
+msgid "Print now"
+msgstr "Imprimer maintenant"
+
+#: includes/class-wcdn-settings.php:282
+msgid "This text will be appended to the invoice number."
+msgstr "Ce texte sera annexé au numéro de facture."
+
+#: includes/class-wcdn-settings.php:271
+msgid "This text will be prepended to the invoice number."
+msgstr "Ce texte sera préfixé au numéro de facture."
+
+#: includes/class-wcdn-settings.php:206
+#: includes/wcdn-template-functions.php:275
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/class-wcdn-settings.php:154
+msgid "Complimentary Close"
+msgstr "Formule de Politesse"
+
+#: includes/class-wcdn-print.php:65
+msgid "Print Receipt"
+msgstr "Imprimer le Reçu"
+
+#: includes/class-wcdn-print.php:63
+msgid "Receipt"
+msgstr "Reçu"
+
+#. Description of the plugin/theme
+msgid "Print Invoices & Delivery Notes for WooCommerce Orders."
+msgstr "Impression de factures & bons de livraison pour les commandes WooCommerce."
+
+#: templates/print-order/print-content.php:162
+msgid "Download:"
+msgstr "Télécharger :"
+
+#: includes/class-wcdn-theme.php:119
+msgid "Print:"
+msgstr "Imprimer :"
+
+#: includes/class-wcdn-settings.php:211
+msgid "This includes the emails for a new, processing and completed order. On top of that the customer invoice email also includes the link."
+msgstr "Cela comprend les e-mails pour une nouvelle commande, une commande en traitement et une commande terminée. En plus de ceci, l’e-mail de facturation au client comprend également le lien."
+
+#: includes/class-wcdn-settings.php:202
+msgid "The endpoint is appended to the accounts page URL to print the order. It should be unique."
+msgstr "Le suffixe est ajouté à l’URL de la page des comptes afin d'imprimer la commande. Il devrait être unique."
+
+#: includes/class-wcdn-settings.php:196
+msgid "Print Page Endpoint"
+msgstr "Imprimer le suffixe de la page"
+
+#: includes/class-wcdn-settings.php:67
+msgid "Do you really want to reset the counter to zero? This process can't be undone."
+msgstr "Voulez-vous vraiment réinitialiser le compteur ? Ce processus est irréversible."
+
+#: includes/class-wcdn-theme.php:119
+msgid "Open print view in browser"
+msgstr "Ouvrir l’aperçu avant impression dans le navigateur"
+
+#. #-#-#-#-#  woocommerce-delivery-notes-code.pot (WooCommerce Print Invoice &
+#. Delivery Note 4.4.7)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:33
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:62
+#: includes/component/welcome-page/templates/welcome/welcome-page.php:68
+#: includes/wcdn-welcome.php:113 includes/wcdn-welcome.php:142
+#: includes/wcdn-welcome.php:148
+msgid "WooCommerce Print Invoice & Delivery Note"
+msgstr "WooCommerce Print Invoice & Delivery Note"
+
+#: includes/class-wcdn-settings.php:140
+msgid "The shop name. Leave blank to use the default Website or Blog title defined in WordPress settings. The name will be ignored when a Logo is set."
+msgstr "Le nom de la boutique. Laissez un espace vide pour utiliser le site par défaut ou le titre du blog défini dans les réglages WordPress. Le nom sera ignoré lorsqu’un logo est défini."
+
+#: woocommerce-delivery-notes.php:351
+msgid "Settings"
+msgstr "Réglages"
+
+#: includes/class-wcdn-settings.php:207
+msgid "Show print link in customer emails"
+msgstr "Afficher le lien d’impression dans l’e-mail au client"
+
+#: includes/class-wcdn-settings.php:216
+msgid "Show print button on the \"View Order\" page"
+msgstr "Afficher le bouton d’impression sur la page « Voir la commande » "
+
+#: includes/wcdn-template-functions.php:269
+msgid "Payment Method"
+msgstr "Moyen de paiement "
+
+#: includes/wcdn-template-functions.php:264
+msgid "Order Date"
+msgstr "Date de commande"
+
+#: includes/class-wcdn-writepanel.php:259
+msgid "Invoice number: "
+msgstr "Numéro de facture : "
+
+#: includes/class-wcdn-writepanel.php:260
+msgid "Invoice date: "
+msgstr "Date de facturation : "
+
+#: includes/class-wcdn-print.php:56
+msgid "Delivery Notes created."
+msgstr "Bons de livraison créés."
+
+#: woocommerce-delivery-notes.php:351
+msgid "Go to the settings page"
+msgstr "Aller sur la page des réglages"
+
+#: includes/class-wcdn-settings.php:224
+msgid "Show print buttons on the \"My Account\" page"
+msgstr "Afficher les boutons d’impression sur la page « Mon Compte »"
+
+#: includes/wcdn-template-functions.php:315
+msgid "SKU:"
+msgstr "Identifiant :"
+
+#: woocommerce-delivery-notes.php:96 woocommerce-delivery-notes.php:103
+msgid "Cheatin&#8217; huh?"
+msgstr "Alors on essaye de tricher, hein ?"

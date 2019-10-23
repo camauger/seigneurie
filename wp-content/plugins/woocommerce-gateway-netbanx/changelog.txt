@@ -1,0 +1,151 @@
+*** WooCommerce Paysafe Gateway Changelog ***
+
+2019.10.02 - version 3.5.0
+ * New: Add system status properties to help with support request information.
+ * Fix: Checkout API: Don't add the city into the state field if the state field is missing.
+ * Fix: Check for WC Subscription before using its functions.
+
+2019.09.24 - version 3.4.2
+ * Fix: Admin notices were displaying false positive notice about the merchant account field
+
+2019.09.17 - version 3.4.1
+ * Fix: Make an "ob_clean" function optional with "wc_paysafe_clean_buffer_before_redirect" filter. Prevented Pay page redirection on some merchant sites
+
+2019.09.06 - version 3.4.0
+ * New: Checkout API: Setting to enable|disable 3DS authentication during Card payments.
+ * New: Checkout API: Add multiple account IDs based on currency code. Allows merchants to use the gateway for multi-currency payments.
+ * Fix: Split server IPs that have two IPs in them.
+
+2019.08.12 - version 3.3.1
+ * Fix: Load the layover correctly even if a button color is not specified
+ * Fix: Properly add 3DS account in the layover setup
+ * Tweak: Add a new line in the transaction details order note. Part of the note was hard to read because a missing new line
+ * Tweak: Do not process CheckoutJS API actions in the Hosted API integration setup
+ * WC 3.7 support checks
+
+2019.07.29 - version 3.3.0
+ * Important: The plugin requires WooCommerce version 3.0.0 or higher!
+ * New: Support for the Paysafe CheckoutJS API.
+ * New: CheckoutJS API: WC Subscription Change Payment Method feature support
+ * New: CheckoutJS API: Add Payment method support
+ * New: CheckoutJS API: Support for WC Payment Tokens and customers paying with saved tokens.
+ * New: Hosted API: Support customer subscription payment method change|update
+ * Tweak: Split the "API Key" setting into two separate settings "API Key: User Name" and "API Key: Password".
+ * Fix: Don't display Capture Payments functionality on the Edit Subscription page
+ * Dev: Moved the plugin code under "WcPaysafe" namespace.
+ * Drop support for WC Subscriptions version 1.n. Only WC Subscription 2.n are supported.
+ * Drop support for WooCommerce version 2.6
+
+2018.08.31 - version 3.2.0
+ * New: Authorization type "Authorize" only added. Allows the merchant to perform an authorization against the order and charge the order at a later date
+ * New: Capture authorized transaction. Performed directly from the admin Order Edit screen. Partial capture is allowed on authorized payments
+ * Tweak: Send only non empty fields from the Billing and Shipping addresses
+ * Tweak: Refactor the gateway hooks loading so we can only load them once
+ * Refactor: Separate plugin essentials to separate classes and load them  as needed
+ * Refactor: Moved plugin notices to its own class and made them dismissible
+ * Dev: Added Paysafe order wrapper to handle the gateway extra data added to the order
+ * Dev: Removed the use of all get_post_meta and update_post_meta from the plugin logic. They are all handled in the plugin order wrapper
+
+2018.02.23 - version 3.1.0
+ * New: Setting to enable or disable customer ID transmission to Paysafe.
+ * New: Filters to filter rebill request parameters for Pre-Orders and Subscriptions.
+ 	- 'wc_paysafe_subscription_rebill_parameters':(paremeters, order, gateway_object) Filters the subscriptions rebill
+ 	- 'wc_paysafe_pre_order_rebill_parameters':(parameters, order, gateway_object) Fitlers the pre-orders billing
+ * Fix: Remove third party class.
+
+2018.01.25 - version 3.0.2
+ * WC 3.3 compatibility checks
+ * Tweak: Added notification in API key placeholder to warn on API key with incorrect format.
+
+2017.10.05 - version 3.0.1
+ * Fix: Added new line to the restricted characters list.
+ * Fix: Mismatching totals in the payment request. Now we take the order item price instead of the product price.
+ * Tweak: Set the default iframe size to 1075x700
+ * Tweak: Option to set accepted card types. Option is only for checkout visualization of the card icons
+
+2017.04.20 - version 3.0
+ * Renamed Netbanx gateway to the new Paysafe gateway.
+ * WC 3.0 Compatibility check and amendments.
+
+2016.12.19 - version 2.3
+ * New: Added a filter for the API key. Will allow the merchant to use different keys for different currency
+ * Tweak: Set the customer prefix to unique ID, by default.
+ * New: Reset customer Netbanx profiles button in settings.
+ * Fix: Netbanx profiles were retrieved from orders with the incorrect order ID, which caused the customer to be presented with an incorrect Payment page.
+
+2016.09.28 - version 2.2.3
+ * Tweak: Added a template for the iframe break. This will allow merchants to modify the breaking script.
+
+2016.07.22 - version 2.2.2
+ * Tweak: Added a notice to detect incorrect API Key format.
+ * Fix: Removed possible invalid index notices.
+
+2016.07.05 - version 2.2.1
+ * Fix: Issue with cancel button not breaking the iframe.
+
+2016.06.25 - version 2.2
+ * New: Automatic Redirect feature. The customers will not be redirected to the Thank You page without them having to click a return button.
+ * Tweak: Removed inconsistent method parameters warning.
+
+2016.06.16 - version 2.1.2
+ * Fix: Had issues with processing normal item orders when Subscriptions/Pre-Orders plugins were enabled. Order with normal items was not processed correctly.
+
+2015.12.28 - version 2.1.1
+ * Tweak: Obtain user IP for the payment request or use a default.
+ * Fix: Added a missed restricted character to the removal list.
+
+2015.12.18 - version 2.1
+ * New: Merchant Email Notification email is added to the payment request.
+ * Tweak: Added "netbanx-payment-status" to the return URLs. Possible values "success", "declined", "held", "abandoned".
+ * Fix: Remove all restricted characters from the requests to Netbanx.
+
+2015.11.23 - version 2.0.2
+ * Fix: Added orders fees to detailed order request
+ * Fix: IFrame now breaks the Pay page as expected.
+
+2015.11.12 - version 2.0.1
+ * Fix: Error when loading iframe.
+ * Fix: No varchar error when using the default item meta formatting delimiter.
+
+2015.10.19 - version 2.0
+ * New: Iframe payment checkout option.
+ * New: WC Subscriptions support. Both 1.n and 2.n versions of the WC Subscriptions plugin are supported.
+ * New: WC Pre-Orders support.
+ * New: Supports Automatic Order Refunds.
+ * Refactored: Completely refactored plugin code structure.
+ * Removed the deprecated TradeGuard API. The API is deprecated for two years and can no longer be tested and supported.
+
+2015.08.21 - version 1.1.3
+ * Fix: External class left in the code by mistake.
+
+2015.08.06 - version 1.1.2
+ * WC 2.4 support checked.
+ * Fixed debug logs path.
+ * Updated Compat class.
+ * Tweak: Load the plugin at plugins_loaded.
+ * Tweak: Buffer the wc-api POST endpoint.
+
+2014.09.16 - version 1.1.1
+ * Fix: Cancel URL too long.
+ * Fix: Payment not going through when country does not have state.
+
+2014.07.08 - version 1.1
+ * Added support for the new Netbanx Hosted API.
+
+2014.01.24 - version 1.0.5
+ * WC 2.1 Support
+
+2013.02.07 - version 1.0.4
+ * WC 2.0 Support
+
+2012.12.05 - version 1.0.3
+ * Updater
+
+2012.11.26 - version 1.0.2
+ * Fix: Now payment process work for countries with no states.
+
+2012.11.08 - version 1.0.1
+ * Fix: removed the second Street2 xml parameter breaking the payment request.
+
+2012.08.30 - version 1.0
+ * initial release

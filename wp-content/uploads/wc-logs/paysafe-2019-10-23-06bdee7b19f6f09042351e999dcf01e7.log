@@ -1,0 +1,150 @@
+2019-10-23T12:54:33+00:00 DEBUG Ajax: Init payment for order 4226
+2019-10-23T12:54:33+00:00 DEBUG process_token_transaction: running card authorization
+2019-10-23T12:54:33+00:00 DEBUG Card authorization parameters: Array
+(
+    [merchantRefNum] => 4226_3
+    [settleWithAuth] => 1
+    [amount] => 2353
+    [dupCheck] => 1
+    [card] => Array
+        (
+            [paymentToken] => SCr3FdJXdSapARI8
+        )
+
+    [profile] => Array
+        (
+            [firstName] => Asterix
+            [lastName] => Prospection
+            [email] => wordpress@prospection.qc.ca
+        )
+
+    [billingDetails] => Array
+        (
+            [city] => Québec
+            [country] => CA
+            [street] => 1750, avenue de Vitré
+            [zip] => G1J 1Z6
+            [state] => QC
+            [phone] => 418 521-2248
+        )
+
+    [shippingDetails] => Array
+        (
+            [recipientName] => Asterix Prospection
+            [city] => Québec
+            [country] => CA
+            [street] => 1750, avenue de Vitré
+            [zip] => G1J 1Z6
+            [state] => QC
+        )
+
+    [description] => Paying for order #4226
+    [storedCredential] => Array
+        (
+            [type] => ADHOC
+            [occurrence] => INITIAL
+        )
+
+    [customerIp] => 205.236.54.50
+)
+
+2019-10-23T12:57:17+00:00 DEBUG Ajax: Init payment for order 4226
+2019-10-23T12:57:17+00:00 DEBUG process_token_transaction: running card authorization
+2019-10-23T12:57:17+00:00 DEBUG Card authorization parameters: Array
+(
+    [merchantRefNum] => 4226_4
+    [settleWithAuth] => 1
+    [amount] => 2353
+    [dupCheck] => 1
+    [card] => Array
+        (
+            [paymentToken] => SClcde6pA1UwzbyJ
+        )
+
+    [profile] => Array
+        (
+            [firstName] => Asterix
+            [lastName] => Prospection
+            [email] => wordpress@prospection.qc.ca
+        )
+
+    [billingDetails] => Array
+        (
+            [city] => Québec
+            [country] => CA
+            [street] => 1750, avenue de Vitré
+            [zip] => G1J 1Z6
+            [state] => QC
+            [phone] => 418 521-2248
+        )
+
+    [shippingDetails] => Array
+        (
+            [recipientName] => Asterix Prospection
+            [city] => Québec
+            [country] => CA
+            [street] => 1750, avenue de Vitré
+            [zip] => G1J 1Z6
+            [state] => QC
+        )
+
+    [description] => Paying for order #4226
+    [storedCredential] => Array
+        (
+            [type] => ADHOC
+            [occurrence] => INITIAL
+        )
+
+    [customerIp] => 205.236.54.50
+)
+
+2019-10-23T13:00:37+00:00 DEBUG Ajax: Init payment for order 4226
+2019-10-23T13:00:37+00:00 DEBUG process_token_transaction: running card authorization
+2019-10-23T13:00:37+00:00 DEBUG Card authorization parameters: Array
+(
+    [merchantRefNum] => 4226_5
+    [settleWithAuth] => 1
+    [amount] => 2353
+    [dupCheck] => 1
+    [card] => Array
+        (
+            [paymentToken] => SCh4KLjVM9SHOGpp
+        )
+
+    [profile] => Array
+        (
+            [firstName] => Asterix
+            [lastName] => Prospection
+            [email] => wordpress@prospection.qc.ca
+        )
+
+    [billingDetails] => Array
+        (
+            [city] => Québec
+            [country] => CA
+            [street] => 1750, avenue de Vitré
+            [zip] => G1J 1Z6
+            [state] => QC
+            [phone] => 418 521-2248
+        )
+
+    [shippingDetails] => Array
+        (
+            [recipientName] => Asterix Prospection
+            [city] => Québec
+            [country] => CA
+            [street] => 1750, avenue de Vitré
+            [zip] => G1J 1Z6
+            [state] => QC
+        )
+
+    [description] => Paying for order #4226
+    [storedCredential] => Array
+        (
+            [type] => ADHOC
+            [occurrence] => INITIAL
+        )
+
+    [customerIp] => 205.236.54.50
+)
+

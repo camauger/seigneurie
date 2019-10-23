@@ -120,6 +120,10 @@ function woo_ce_get_product_fields( $format = 'full' ) {
 		'label' => __( 'Sale Price', 'woocommerce-exporter' )
 	);
 	$fields[] = array(
+		'name' => 'net_price',
+		'label' => __( 'Net Price', 'woocommerce-exporter' )
+	);
+	$fields[] = array(
 		'name' => 'sale_price_dates_from',
 		'label' => __( 'Sale Price Dates From', 'woocommerce-exporter' )
 	);
@@ -705,6 +709,7 @@ function woo_ce_get_product_data( $product_id = 0, $args = array() ) {
 	// Check that a valid price has been provided and that wc_format_localized_price() exists
 	if( isset( $product->sale_price ) && $product->sale_price != '' && function_exists( 'wc_format_localized_price' ) )
 		$product->sale_price = wc_format_localized_price( $product->sale_price );
+	$product->net_price = ( $product->sale_price != '' ? $product->sale_price : $product->price );
 	$product->sale_price_dates_from = woo_ce_format_product_sale_price_dates( get_post_meta( $product_id, '_sale_price_dates_from', true ) );
 	$product->sale_price_dates_to = woo_ce_format_product_sale_price_dates( get_post_meta( $product_id, '_sale_price_dates_to', true ) );
 	$product->post_date = woo_ce_format_date( $product->post_date );
@@ -1119,48 +1124,6 @@ function woo_ce_get_product_assoc_download_files( $product_id = 0, $type = 'url'
 				unset( $file_download, $file_downloads );
 			}
 			$output = substr( $output, 0, -1 );
-		}
-	}
-	return $output;
-
-}
-
-// Returns list of Product Add-on columns
-function woo_ce_get_product_addons() {
-
-	// Product Add-ons - http://www.woothemes.com/
-	if( class_exists( 'Product_Addon_Admin' ) || class_exists( 'Product_Addon_Display' ) ) {
-		$post_type = 'global_product_addon';
-		$args = array(
-			'post_type' => $post_type,
-			'numberposts' => -1
-		);
-		$output = array();
-
-		// First grab the Global Product Add-ons
-		if( $product_addons = get_posts( $args ) ) {
-			foreach( $product_addons as $product_addon ) {
-				if( $meta = maybe_unserialize( get_post_meta( $product_addon->ID, '_product_addons', true ) ) ) {
-					$size = count( $meta );
-					for( $i = 0; $i < $size; $i++ ) {
-						$output[] = (object)array(
-							'post_name' => $meta[$i]['name'],
-							'post_title' => $meta[$i]['name'],
-							'form_title' => $product_addon->post_title
-						);
-					}
-				}
-			}
-		}
-	}
-
-	// Custom Order Items
-	if( $custom_order_items = woo_ce_get_option( 'custom_order_items', '' ) ) {
-		foreach( $custom_order_items as $custom_order_item ) {
-			$output[] = (object)array(
-				'post_name' => $custom_order_item,
-				'post_title' => $custom_order_item
-			);
 		}
 	}
 	return $output;

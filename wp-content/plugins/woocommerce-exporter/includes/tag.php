@@ -50,6 +50,10 @@ function woo_ce_get_tag_fields( $format = 'full' ) {
 		'label' => __( 'Term URI', 'woocommerce-exporter' )
 	);
 	$fields[] = array(
+		'name' => 'description',
+		'label' => __( 'Description', 'woocommerce-exporter' )
+	);
+	$fields[] = array(
 		'name' => 'count',
 		'label' => __( 'Count', 'woocommerce-exporter' )
 	);

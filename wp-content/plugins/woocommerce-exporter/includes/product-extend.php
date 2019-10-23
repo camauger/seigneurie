@@ -10,6 +10,7 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 			'disabled' => 1
 		);
 	}
+
 /*
 	// Attributes
 	if( $attributes = woo_ce_get_product_attributes() ) {
@@ -24,62 +25,62 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 	}
 */
 
-	// Advanced Google Product Feed - http://www.leewillis.co.uk/wordpress-plugins/
+	// WooCommerce Google Product Feed - http://www.leewillis.co.uk/wordpress-plugins/
 	if( woo_ce_detect_export_plugin( 'gpf' ) ) {
 		$fields[] = array(
 			'name' => 'gpf_availability',
-			'label' => __( 'Advanced Google Product Feed - Availability', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Availability', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
 			'name' => 'gpf_condition',
-			'label' => __( 'Advanced Google Product Feed - Condition', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Condition', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
 			'name' => 'gpf_brand',
-			'label' => __( 'Advanced Google Product Feed - Brand', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Brand', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
 			'name' => 'gpf_product_type',
-			'label' => __( 'Advanced Google Product Feed - Product Type', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Product Type', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
 			'name' => 'gpf_google_product_category',
-			'label' => __( 'Advanced Google Product Feed - Google Product Category', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Google Product Category', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
 			'name' => 'gpf_gtin',
-			'label' => __( 'Advanced Google Product Feed - Global Trade Item Number (GTIN)', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Global Trade Item Number (GTIN)', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
 			'name' => 'gpf_mpn',
-			'label' => __( 'Advanced Google Product Feed - Manufacturer Part Number (MPN)', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Manufacturer Part Number (MPN)', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
 			'name' => 'gpf_gender',
-			'label' => __( 'Advanced Google Product Feed - Gender', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Gender', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
 			'name' => 'gpf_agegroup',
-			'label' => __( 'Advanced Google Product Feed - Age Group', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Age Group', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
-			'name' => 'gpf_colour',
-			'label' => __( 'Advanced Google Product Feed - Colour', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'name' => 'gpf_color',
+			'label' => __( 'WooCommerce Google Product Feed - Colour', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 		$fields[] = array(
 			'name' => 'gpf_size',
-			'label' => __( 'Advanced Google Product Feed - Size', 'woocommerce-exporter' ),
-			'hover' => __( 'Advanced Google Product Feed', 'woocommerce-exporter' )
+			'label' => __( 'WooCommerce Google Product Feed - Size', 'woocommerce-exporter' ),
+			'hover' => __( 'WooCommerce Google Product Feed', 'woocommerce-exporter' )
 		);
 	}
 
@@ -174,6 +175,11 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 			'label' => __( 'WordPress SEO - Twitter Image', 'woocommerce-exporter' ),
 			'hover' => __( 'WordPress SEO', 'woocommerce-exporter' )
 		);
+		$fields[] = array(
+			'name' => 'wpseo_canonical',
+			'label' => __( 'WordPress SEO - Canonical URL', 'woocommerce-exporter' ),
+			'hover' => __( 'WordPress SEO', 'woocommerce-exporter' )
+		);
 	}
 
 	// Ultimate SEO - http://wordpress.org/plugins/seo-ultimate/
@@ -236,11 +242,72 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 		);
 	}
 
+	// WooCommerce Germanized Pro - https://www.vendidero.de/woocommerce-germanized
+	if( woo_ce_detect_export_plugin( 'wc_germanized_pro' ) ) {
+		// Check for Product Units
+		if( get_option( 'woocommerce_gzd_display_listings_product_units' ) == 'yes' ) {
+			$fields[] = array(
+				'name' => 'sale_price_label',
+				'label' => __( 'Sale Label', 'woocommerce-germanized' ),
+				'hover' => __( 'WooCommerce Germanized', 'woocommerce-exporter' ),
+				'disabled' => 1
+			);
+			$fields[] = array(
+				'name' => 'sale_price_regular_label',
+				'label' => __( 'Sale Regular Label', 'woocommerce-germanized' ),
+				'hover' => __( 'WooCommerce Germanized', 'woocommerce-exporter' ),
+				'disabled' => 1
+			);
+			$fields[] = array(
+				'name' => 'unit',
+				'label' => __( 'Unit', 'woocommerce-germanized' ),
+				'hover' => __( 'WooCommerce Germanized', 'woocommerce-exporter' ),
+				'disabled' => 1
+			);
+			$fields[] = array(
+				'name' => 'unit_product',
+				'label' => __( 'Product Units', 'woocommerce-germanized' ),
+				'hover' => __( 'WooCommerce Germanized', 'woocommerce-exporter' ),
+				'disabled' => 1
+			);
+			$fields[] = array(
+				'name' => 'unit_base',
+				'label' => __( 'Base Price Units', 'woocommerce-germanized' ),
+				'hover' => __( 'WooCommerce Germanized', 'woocommerce-exporter' ),
+				'disabled' => 1
+			);
+			$fields[] = array(
+				'name' => 'unit_price_auto',
+				'label' => __( 'Calculation', 'woocommerce-germanized' ),
+				'hover' => __( 'WooCommerce Germanized', 'woocommerce-exporter' ),
+				'disabled' => 1
+			);
+			$fields[] = array(
+				'name' => 'unit_price_regular',
+				'label' => __( 'Regular Base Price', 'woocommerce-germanized' ),
+				'hover' => __( 'WooCommerce Germanized', 'woocommerce-exporter' ),
+				'disabled' => 1
+			);
+			$fields[] = array(
+				'name' => 'unit_price_sale',
+				'label' => __( 'Sale Base Price', 'woocommerce-germanized' ),
+				'hover' => __( 'WooCommerce Germanized', 'woocommerce-exporter' ),
+				'disabled' => 1
+			);
+			$fields[] = array(
+				'name' => 'unit_price_regular_display',
+				'label' => __( 'Regular Base Price Display', 'woocommerce-germanized' ),
+				'hover' => __( 'WooCommerce Germanized', 'woocommerce-exporter' ),
+				'disabled' => 1
+			);
+		}
+	}
+
 	// Cost of Goods - http://www.skyverge.com/product/woocommerce-cost-of-goods-tracking/
 	if( woo_ce_detect_export_plugin( 'wc_cog' ) ) {
 		$fields[] = array(
 			'name' => 'cost_of_goods',
-			'label' => __( 'Cost of Goods', 'woocommerce-exporter' ),
+			'label' => __( 'Cost of Good', 'woocommerce-exporter' ),
 			'hover' => __( 'Cost of Goods', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
@@ -346,6 +413,22 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 		);
 	}
 
+	// WC Marketplace - https://wc-marketplace.com/
+	if( woo_ce_detect_export_plugin( 'wc_marketplace' ) ) {
+		$fields[] = array(
+			'name' => 'vendor',
+			'label' => __( 'Vendor' ),
+			'hover' => __( 'WC Marketplace', 'woocommerce-exporter' ),
+			'disabled' => 1
+		);
+		$fields[] = array(
+			'name' => 'vendor_commission',
+			'label' => __( 'Commission' ),
+			'hover' => __( 'WC Marketplace', 'woocommerce-exporter' ),
+			'disabled' => 1
+		);
+	}
+
 	// WooCommerce Wholesale Pricing - http://ignitewoo.com/woocommerce-extensions-plugins-themes/woocommerce-wholesale-pricing/
 	if( woo_ce_detect_export_plugin( 'wholesale_pricing' ) ) {
 		$fields[] = array(
@@ -368,14 +451,14 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 		if( !empty( $custom_fields ) ) {
 			foreach( $custom_fields as $custom_field ) {
 				$fields[] = array(
-					'name' => $custom_field['name'],
+					'name' => sprintf( 'acf_%s', sanitize_key( $custom_field['name'] ) ),
 					'label' => $custom_field['label'],
 					'hover' => __( 'Advanced Custom Fields', 'woocommerce-exporter' ),
 					'disabled' => 1
 				);
 			}
-			unset( $custom_fields, $custom_field );
 		}
+		unset( $custom_fields, $custom_field );
 	}
 
 	// WooCommerce Custom Fields - http://www.rightpress.net/woocommerce-custom-fields
@@ -415,6 +498,23 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 			unset( $label, $key );
 		}
 		unset( $custom_fields, $custom_field );
+	}
+
+	// WC Fields Factory - https://wordpress.org/plugins/wc-fields-factory/
+	if( woo_ce_detect_export_plugin( 'wc_fields_factory' ) ) {
+		// Admin Fields
+		$admin_fields = woo_ce_get_wcff_admin_fields();
+		if( !empty( $admin_fields ) ) {
+			foreach( $admin_fields as $admin_field ) {
+				$fields[] = array(
+					'name' => sprintf( 'wccaf_%s', sanitize_key( $admin_field['name'] ) ),
+					'label' => ucfirst( $admin_field['label'] ),
+					'hover' => sprintf( '%s: %s (%s)', __( 'WC Fields Factory', 'woocommerce-exporter' ), __( 'Admin Field', 'woocommerce-exporter' ), sanitize_key( $admin_field['name'] ) ),
+					'disabled' => 1
+				);
+			}
+		}
+		unset( $admin_fields, $admin_field );
 	}
 
 	// WooCommerce Subscriptions - http://www.woothemes.com/products/woocommerce-subscriptions/
@@ -581,80 +681,110 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 		);
 	}
 
-	// WooCommerce Events - http://www.woocommerceevents.com/
-	if( woo_ce_detect_export_plugin( 'wc_events' ) ) {
+	// FooEvents for WooCommerce - http://www.woocommerceevents.com/
+	if( woo_ce_detect_export_plugin( 'fooevents' ) ) {
 		$fields[] = array(
 			'name' => 'is_event',
 			'label' => __( 'Is Event', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_date',
 			'label' => __( 'Event Date', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_start_time',
 			'label' => __( 'Event Start Time', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_end_time',
 			'label' => __( 'Event End Time', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_venue',
 			'label' => __( 'Event Venue', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_gps',
 			'label' => __( 'Event GPS Coordinates', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_googlemaps',
 			'label' => __( 'Event Google Maps Coordinates', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_directions',
 			'label' => __( 'Event Directions', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_phone',
 			'label' => __( 'Event Phone', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_email',
 			'label' => __( 'Event E-mail', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_ticket_logo',
 			'label' => __( 'Event Ticket Logo', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
+			'disabled' => 1
+		);
+		$fields[] = array(
+			'name' => 'event_ticket_subject',
+			'label' => __( 'Event Ticket Subject', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
 		$fields[] = array(
 			'name' => 'event_ticket_text',
 			'label' => __( 'Event Ticket Text', 'woocommerce-exporter' ),
-			'hover' => __( 'WooCommerce Events', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
+		$fields[] = array(
+			'name' => 'event_ticket_thankyou_text',
+			'label' => __( 'Event Ticket Thank You Page Text', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
+			'disabled' => 1
+		);
+		$fields[] = array(
+			'name' => 'event_ticket_background_color',
+			'label' => __( 'Event Ticket Background Colour', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
+			'disabled' => 1
+		);
+		$fields[] = array(
+			'name' => 'event_ticket_button_color',
+			'label' => __( 'Event Ticket Background Colour', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
+			'disabled' => 1
+		);
+		$fields[] = array(
+			'name' => 'event_ticket_text_color',
+			'label' => __( 'Event Ticket Background Colour', 'woocommerce-exporter' ),
+			'hover' => __( 'FooEvents for WooCommerce', 'woocommerce-exporter' ),
+			'disabled' => 1
+		);		
 	}
 
 	// WooCommerce Uploads - https://wpfortune.com/shop/plugins/woocommerce-uploads/
@@ -792,6 +922,7 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 			}
 		}
 		unset( $custom_books, $custom_book );
+
 		$fields[] = array(
 			'name' => 'book_category',
 			'label' => __( 'Book Category', 'woocommerce-exporter' ),
@@ -942,7 +1073,7 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 		unset( $wholesale_roles, $wholesale_role, $key );
 	}
 
-	// WooCommerce Currency Switcher - http://dev.pathtoenlightenment.net/shop
+	// WooCommerce Currency Switcher - http://aelia.co/shop/currency-switcher-woocommerce/
 	if( woo_ce_detect_export_plugin( 'currency_switcher' ) ) {
 		$options = get_option( 'wc_aelia_currency_switcher' );
 		$currencies = ( isset( $options['enabled_currencies'] ) ? $options['enabled_currencies'] : false );
@@ -953,6 +1084,8 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 				// Skip the WooCommerce default currency
 				if( $woocommerce_currency == $currency )
 					continue;
+
+				// Product Base Currency
 
 				$fields[] = array(
 					'name' => sprintf( 'wcae_regular_price_%s', sanitize_key( $currency ) ),
@@ -1231,6 +1364,20 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 		);
 	}
 
+	// N-Media WooCommerce Personalized Product Meta Manager - https://najeebmedia.com/wordpress-plugin/woocommerce-personalized-product-option/
+	// PPOM for WooCommerce - https://wordpress.org/plugins/woocommerce-product-addon/
+	if(
+		woo_ce_detect_export_plugin( 'wc_nm_personalizedproduct' ) || 
+		woo_ce_detect_export_plugin( 'wc_ppom' )
+	) {
+		$fields[] = array(
+			'name' => 'select_personalized_meta',
+			'label' => __( 'Select Personalized Meta', 'woocommerce-exporter' ),
+			'hover' => __( 'N-Media WooCommerce Personalized Product Meta Manager', 'woocommerce-exporter' ),
+			'disabled' => 1
+		);
+	}
+
 	// SEO Squirrly - https://wordpress.org/plugins/squirrly-seo/
 	if( woo_ce_detect_export_plugin( 'seo_squirrly' ) ) {
 		$fields[] = array(
@@ -1243,6 +1390,7 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 
 	// WooCommerce Measurement Price Calculator - http://www.woocommerce.com/products/measurement-price-calculator/
 	if( woo_ce_detect_export_plugin( 'wc_measurement_price_calc' ) ) {
+
 		$fields[] = array(
 			'name' => 'area',
 			'label' => __( 'Area', 'woocommerce-exporter' ),
@@ -1280,6 +1428,7 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 			'hover' => __( 'WooCommerce Measurement Price Calculator', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
+
 		// Area
 		$fields[] = array(
 			'name' => 'measurement_area_pricing',
@@ -1299,6 +1448,7 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 			'hover' => __( 'WooCommerce Measurement Price Calculator', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
+
 		// Area (LxW)
 		$fields[] = array(
 			'name' => 'measurement_area_dimension_pricing',
@@ -1385,6 +1535,7 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 			'hover' => __( 'WooCommerce Measurement Price Calculator', 'woocommerce-exporter' ),
 			'disabled' => 1
 		);
+
 		// Surface Area
 		// Volume
 		// Volume (LxWxH)
@@ -1455,6 +1606,7 @@ function woo_ce_extend_product_item( $product, $product_id ) {
 		$product->wpseo_twitter_title = get_post_meta( $product_id, '_yoast_wpseo_twitter-title', true );
 		$product->wpseo_twitter_description = get_post_meta( $product_id, '_yoast_wpseo_twitter-description', true );
 		$product->wpseo_twitter_image = get_post_meta( $product_id, '_yoast_wpseo_twitter-image', true );
+		$product->wpseo_canonical = get_post_meta( $product_id, '_yoast_wpseo_canonical', true );
 	}
 
 	// Ultimate SEO - http://wordpress.org/plugins/seo-ultimate/
@@ -1493,6 +1645,45 @@ function woo_ce_extend_product_item( $product, $product_id ) {
 }
 add_filter( 'woo_ce_product_item', 'woo_ce_extend_product_item', 10, 2 );
 
+// Returns list of Product Add-on columns
+function woo_ce_get_product_addons() {
+
+	// Product Add-ons - http://www.woothemes.com/
+	if( woo_ce_detect_export_plugin( 'product_addons' ) ) {
+		$post_type = 'global_product_addon';
+		$args = array(
+			'post_type' => $post_type,
+			'numberposts' => -1
+		);
+		$output = array();
+
+		// First grab the Global Product Add-ons
+		$product_addons = get_posts( $args );
+		if( !empty( $product_addons ) ) {
+			foreach( $product_addons as $product_addon ) {
+				$meta = maybe_unserialize( get_post_meta( $product_addon->ID, '_product_addons', true ) );
+				if( !empty( $meta ) ) {
+					$size = count( $meta );
+					for( $i = 0; $i < $size; $i++ ) {
+						$output[] = (object)array(
+							'post_name' => $meta[$i]['name'],
+							'post_title' => $meta[$i]['name'],
+							'form_title' => sprintf( __( 'Global Product Add-on: %s', 'woocommerce-exporter' ), $product_addon->post_title )
+						);
+					}
+					unset( $size );
+				}
+				unset( $meta );
+			}
+		}
+
+		if( !empty( $output ) )
+			return $output;
+	}
+
+}
+
+// WooCommerce Custom Fields - http://www.rightpress.net/woocommerce-custom-fields
 function woo_ce_get_wccf_product_properties() {
 
 	$post_type = 'wccf_product_prop';
@@ -1508,6 +1699,7 @@ function woo_ce_get_wccf_product_properties() {
 
 }
 
+// Advanced Google Product Feed - http://plugins.leewillis.co.uk/downloads/wp-e-commerce-product-feeds/
 function woo_ce_format_gpf_availability( $availability = null ) {
 
 	$output = '';
@@ -1533,6 +1725,7 @@ function woo_ce_format_gpf_availability( $availability = null ) {
 
 }
 
+// Advanced Google Product Feed - http://plugins.leewillis.co.uk/downloads/wp-e-commerce-product-feeds/
 function woo_ce_format_gpf_condition( $condition ) {
 
 	$output = '';
@@ -1558,6 +1751,7 @@ function woo_ce_format_gpf_condition( $condition ) {
 
 }
 
+// Advanced Custom Fields - http://www.advancedcustomfields.com
 function woo_ce_get_acf_product_fields() {
 
 	global $wpdb;
@@ -1567,12 +1761,14 @@ function woo_ce_get_acf_product_fields() {
 		'post_type' => $post_type,
 		'numberposts' => -1
 	);
-	if( $field_groups = get_posts( $args ) ) {
+	$field_groups = get_posts( $args );
+	if( !empty( $field_groups ) ) {
 		$fields = array();
 		$post_types = array( 'product', 'product_variation' );
 		foreach( $field_groups as $field_group ) {
 			$has_fields = false;
-			if( $rules = get_post_meta( $field_group->ID, 'rule' ) ) {
+			$rules = get_post_meta( $field_group->ID, 'rule' );
+			if( !empty( $rules ) ) {
 				$size = count( $rules );
 				for( $i = 0; $i < $size; $i++ ) {
 					if( ( $rules[$i]['param'] == 'post_type' ) && ( $rules[$i]['operator'] == '==' ) && ( in_array( $rules[$i]['value'], $post_types ) ) ) {
@@ -1582,25 +1778,30 @@ function woo_ce_get_acf_product_fields() {
 				}
 			}
 			unset( $rules );
-			if( $has_fields ) {
-				$custom_fields_sql = "SELECT `meta_value` FROM `" . $wpdb->postmeta . "` WHERE `post_id` = " . absint( $field_group->ID ) . " AND `meta_key` LIKE 'field_%'";
-				if( $custom_fields = $wpdb->get_col( $custom_fields_sql ) ) {
-					foreach( $custom_fields as $custom_field ) {
-						$custom_field = maybe_unserialize( $custom_field );
-						$fields[] = array(
-							'name' => $custom_field['name'],
-							'label' => $custom_field['label']
-						);
-					}
+
+			if( !$has_fields )
+				continue;
+
+			$custom_fields_sql = "SELECT `meta_value` FROM `" . $wpdb->postmeta . "` WHERE `post_id` = " . absint( $field_group->ID ) . " AND `meta_key` LIKE 'field_%'";
+			if( $custom_fields = $wpdb->get_col( $custom_fields_sql ) ) {
+				foreach( $custom_fields as $custom_field ) {
+					$custom_field = maybe_unserialize( $custom_field );
+					$fields[] = array(
+						'name' => $custom_field['name'],
+						'label' => $custom_field['label']
+					);
 				}
-				unset( $custom_fields, $custom_field );
 			}
+			unset( $custom_fields, $custom_field );
 		}
+
 		return $fields;
+
 	}
 
 }
 
+// WordPress SEO - http://wordpress.org/plugins/wordpress-seo/
 function woo_ce_format_wpseo_noindex( $noindex = '' ) {
 
 	$output = $noindex;
@@ -1630,6 +1831,7 @@ function woo_ce_format_wpseo_noindex( $noindex = '' ) {
 
 }
 
+// WordPress SEO - http://wordpress.org/plugins/wordpress-seo/
 function woo_ce_format_wpseo_follow( $follow = '' ) {
 
 	$output = $follow;
@@ -1665,4 +1867,3 @@ function woo_ce_get_wholesale_prices_roles() {
 	return $output;
 
 }
-?>

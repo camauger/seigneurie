@@ -683,6 +683,7 @@ function wpo_delete_files($src, $recursive = true) {
 	}
 
 	$success = true;
+	$has_dir = false;
 
 	if ($recursive) {
 		// N.B. If opendir() fails, then a false positive (i.e. true) will be returned
@@ -707,18 +708,26 @@ function wpo_delete_files($src, $recursive = true) {
 			}
 			closedir($dir);
 		}
-
-		// Success of this operation is not recorded; we only ultimately care about emptying, not removing entirely (empty folders in our context are harmless)
-		rmdir($src);
 	} else {
 		// Not recursive, so we only delete the files
 		$files = scandir($src);
 		foreach ($files as $file) {
-			if (is_dir($src . '/' . $file) || '.' == $file || '..' == $file) continue;
+			if ('.' == $file || '..' == $file) continue;
+
+			if (is_dir($src . '/' . $file)) {
+				$has_dir = true;
+				continue;
+			}
+
 			if (!unlink($src . '/' . $file)) {
 				$success = false;
 			}
 		}
+	}
+
+	if ($success && !$has_dir) {
+		// Success of this operation is not recorded; we only ultimately care about emptying, not removing entirely (empty folders in our context are harmless)
+		rmdir($src);
 	}
 
 	// delete cached information about cache size.

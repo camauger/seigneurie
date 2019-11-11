@@ -4,17 +4,19 @@ Contributors: visser, visser.labs
 Donate link: https://www.visser.com.au/donations/
 Tags: woocommerce, export, products, sales, orders, coupons, users, subscriptions, csv
 Requires at least: 2.9.2
-Tested up to: 5.2.2
-Stable tag: 2.2
+Tested up to: 5.2.4
+Stable tag: 2.3.1
 License: GPLv2 or later
 
 Export store details out of WooCommerce into simple formatted files (e.g. CSV, XML, Excel 2007, XLS, etc.).
 
 == Description ==
 
-**WooCommerce - Store Exporter creates Product, Order, Category, Tag and User exports to suit your store requirements, simply click Quick Export to produce concise, ready to use Excel spreadshseets.**
+[Premium](https://www.visser.com.au/solutions/woocommerce-export/) | [Documentation](https://www.visser.com.au/documentation/store-exporter-deluxe/)
 
-Screen-loads of filters and options are available to customise each export type, with native export integration of 110+ WooCommerce Plugins. 
+**Store Exporter for WooCommerce creates Product, Order, Category, Tag and User exports to suit your store requirements, simply click Quick Export to produce concise, ready to use Excel spreadshseets.**
+
+Screen-loads of filters and options are available to customise each export type, with native export integration of 125+ WooCommerce Plugins. 
 
 Supported since 2012 Store Exporter for WooCommerce is maintained by an active community of store owners and developers providing feature suggestions and feedback.
 
@@ -113,8 +115,6 @@ Just a few of the features unlocked in the [Pro upgrade of Store Exporter](https
 
 ... and many more free and Premium extensions for WooCommerce and WordPress.
 
-Want regular updates? [Become a fan on Facebook](http://www.facebook.com/visser.labs/)
-
 [For more information visit our site.](https://www.visser.com.au/solutions/woocommerce-export/)
 
 Happy exporting! :)
@@ -144,16 +144,27 @@ If you have any problems, questions or suggestions please create a topic here on
 
 == Screenshots ==
 
-1. Select the data fields to be included in the export, selections are remembered for next export.
-2. Each dataset (e.g. Products, Orders, etc.) include filter options to filter by date, status, type, customer and more.
-3. A range of export options can be adjusted to suit different languages and file formatting requirements.
-4. Export a list of WooCommerce Product Categories into a CSV file.
-5. Export a list of WooCommerce Product Tags into a CSV file.
-6. Download archived copies of previous exports
-7. Use the Field Editor to relabel export fields to your preferred names
-8. Drag-and-drop export fields to your preferred ordering, sorting is saved between screen refreshes.
+1. Each export type contains its own fields, filters and options.
+2. Select the Product fields to be included in the export, selections are remembered.
+3. Filters are available for each export type.
+3. Adjust options to suit different languages, file formats and column formatting.
+4. Native export integration with 100+ WooCommerce and WordPress Plugins.
+5. Use the Field Editor to label export columns
+6. Manage Plugin options from the Settings screen.
 
 == Changelog ==
+
+= 2.3.1 =
+* Fixed: Private Products being included in default Product exports (thanks @golfball-uhu)
+
+= 2.3 =
+* Fixed: Export notices not saving state
+* Fixed: Donate notice blocking tab navigation
+* Changed: Hide welcome notice after first export
+* Added: Upgrade to Pro notice after first export
+
+= 2.2.1 =
+* Fixed: Fatal error affecting Product export with WooCommerce Custom Fields Plugin (thanks @kramarz)
 
 = 2.2 =
 * Added: Description to Category export type (thanks @yatgirl)

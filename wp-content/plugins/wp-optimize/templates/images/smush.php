@@ -161,7 +161,7 @@
 		</tbody>
 	</table>
 	</div>
-	<input type="button" class="wpo_primary_small button-primary wpo_smush_stats_cta_btn" value="<?php _e('Cancel', 'wp-optimize'); ?>" />
+	<input type="button" id="wpo_smush_images_pending_tasks_cancel_button" class="wpo_primary_small button-primary" value="<?php _e('Cancel', 'wp-optimize'); ?>" />
 </div>
 
 <div id="smush-complete-summary" class="complete-animation" style="display:none;">

@@ -149,10 +149,16 @@ class Re_Smush_It_Task extends Updraft_Smush_Task {
 			return false;
 		}
 
-		$compressed_image = file_get_contents($data->dest);
-		
-		if ($compressed_image) {
-			return $compressed_image;
+		$compressed_image_response = wp_remote_get($data->dest);
+
+		if (!is_wp_error($compressed_image_response)) {
+			$image_contents = wp_remote_retrieve_body($compressed_image_response);
+			if ($this->is_downloaded_image_buffer_mime_type_valid($image_contents)) {
+				return $image_contents;
+			} else {
+				$this->log("The downloaded resource does not have a matching mime type.");
+				return false;
+			}
 		} else {
 			$this->fail("invalid_response", "The compression apparently succeeded, but WP-Optimize could not retrieve the compressed image from the remote server.");
 			$this->log("data: ".json_encode($data));

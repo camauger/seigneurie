@@ -3,16 +3,16 @@
  * Plugin Name: WooCommerce - Store Exporter
  * Plugin URI: http://www.visser.com.au/woocommerce/plugins/exporter/
  * Description: Export store details out of WooCommerce into simple formatted files (e.g. CSV, TSV, Excel formats including XLS and XLSX, XML, etc.)
- * Version: 2.2
+ * Version: 2.3.1
  * Author: Visser Labs
- * Author URI: http://www.visser.com.au/about/
+ * Author URI: http://www.visser.com.au/solutions/
  * License: GPL2
  * 
  * Text Domain: woocommerce-exporter
  * Domain Path: /languages/
  * 
  * WC requires at least: 2.3
- * WC tested up to: 3.7
+ * WC tested up to: 3.8
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -116,6 +116,8 @@ if( is_admin() ) {
 
 			// Add memory usage to the screen footer of the WooCommerce > Store Export screen
 			add_filter( 'admin_footer_text', 'woo_ce_admin_footer_text' );
+
+			woo_ce_export_init();
 
 		}
 
@@ -383,6 +385,21 @@ if( is_admin() ) {
 
 					// Print file contents to browser
 					} else {
+
+						// Hide welcome notices after the first export
+						if( !woo_ce_get_option( 'dismiss_quick_export_prompt', 0 ) )
+							woo_ce_update_option( 'dismiss_quick_export_prompt', 1 );
+						if( !woo_ce_get_option( 'dismiss_overview_prompt', 0 ) )
+							woo_ce_update_option( 'dismiss_overview_prompt', 1 );
+
+						// Show the upgrade notice after the first export
+						if(
+							!woo_ce_get_option( 'show_upgrade_prompt', 0 ) && 
+							!woo_ce_get_option( 'dismiss_upgrade_prompt', 0 )
+						) {
+							woo_ce_update_option( 'show_upgrade_prompt', 1 );
+						}
+
 						if( in_array( $export->export_format, array( 'csv' ) ) ) {
 
 							// Generate CSV contents

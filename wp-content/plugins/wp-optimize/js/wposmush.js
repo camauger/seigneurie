@@ -14,7 +14,6 @@ var WP_Optimize_Smush = function() {
 		smush_images_optimization_message = $('#smush_info_images'),
 		smush_images_pending_tasks_container = $('#wpo_smush_images_pending_tasks_container'),
 		smush_images_pending_tasks_btn = $('#wpo_smush_images_pending_tasks_button'),
-		smush_images_pending_tasks_cancel_btn = $('#wpo_smush_images_pending_tasks_cancel_button'),
 		smush_images_save_options_btn = $('.wpo-fieldgroup #wpo_smush_images_save_options_button'),
 		smush_images_refresh_btn = $('#wpo_smush_images_refresh'),
 		smush_images_select_all_btn = $('#wpo_smush_images_select_all'),
@@ -258,12 +257,17 @@ var WP_Optimize_Smush = function() {
 
 
 	/**
-	 * Binds pending tasks cancel button
+	 * Binds smush cancel button
 	 */
-	smush_images_pending_tasks_cancel_btn.on('click', function(e) {
+	$('body').on('click', '#wpo_smush_images_pending_tasks_cancel_button', function(e) {
+
 		smush_manager_send_command('clear_pending_images', {}, function(resp) {
+			$.unblockUI();
 			if (resp.status) {
-				smush_images_pending_tasks_container.delay(3000).fadeOut();
+				get_info_from_smush_manager();
+				reset_view_bulk_smush();
+			} else {
+				console.log('Cancelling pending images apparently failed.', resp);
 			}
 		});
 	});

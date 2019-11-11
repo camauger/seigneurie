@@ -183,6 +183,17 @@ if( is_admin() ) {
 				}
 				break;
 
+			case 'dismiss_upgrade_prompt':
+				// We need to verify the nonce.
+				if( !empty( $_GET ) && check_admin_referer( 'woo_ce_dismiss_upgrade_prompt' ) ) {
+					// Remember that we've dismissed this notice
+					woo_ce_update_option( 'dismiss_upgrade_prompt', 1 );
+					$url = add_query_arg( array( 'action' => null, '_wpnonce' => null ) );
+					wp_redirect( $url );
+					exit();
+				}
+				break;
+
 			case 'dismiss_archives_prompt':
 				// We need to verify the nonce.
 				if( !empty( $_GET ) && check_admin_referer( 'woo_ce_dismiss_archives_prompt' ) ) {

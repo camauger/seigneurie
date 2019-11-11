@@ -166,6 +166,7 @@ abstract class Order_Document {
 		$non_historical_settings = apply_filters( 'wpo_wcpdf_non_historical_settings', array(
 			'enabled',
 			'attach_to_email_ids',
+			'disable_for_statuses',
 			'number_format', // this is stored in the number data already!
 			'my_account_buttons',
 			'my_account_restrict',
@@ -182,7 +183,7 @@ abstract class Order_Document {
 	}
 
 	public function get_attach_to_email_ids() {
-		$email_ids = isset( $this->settings['attach_to_email_ids'] ) ? array_keys( $this->settings['attach_to_email_ids'] ) : array();
+		$email_ids = isset( $this->settings['attach_to_email_ids'] ) ? array_keys( array_filter( $this->settings['attach_to_email_ids'] ) ) : array();
 		return $email_ids;  
 	}
 
@@ -743,8 +744,12 @@ abstract class Order_Document {
 	 */
 	public function get_wc_emails() {
 		// get emails from WooCommerce
-		global $woocommerce;
-		$mailer = $woocommerce->mailer();
+		if (function_exists('WC')) {
+			$mailer = WC()->mailer();
+		} else {
+			global $woocommerce;
+			$mailer = $woocommerce->mailer();
+		}
 		$wc_emails = $mailer->get_emails();
 
 		$non_order_emails = array(

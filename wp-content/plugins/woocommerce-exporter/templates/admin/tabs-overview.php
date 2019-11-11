@@ -123,27 +123,17 @@
 <!-- .overview-left -->
 <div class="welcome-panel overview-right">
 	<h3>
-		<!-- <span><a href="#"><attr title="<?php _e( 'Dismiss this message', 'woocommerce-exporter' ); ?>"><?php _e( 'Dismiss', 'woocommerce-exporter' ); ?></attr></a></span> -->
-		<?php _e( 'Upgrade to Pro', 'woocommerce-exporter' ); ?>
+		<?php _e( 'Unlock business focused WooCommerce exports.', 'woocommerce-exporter' ); ?>
 	</h3>
-	<p class="clear"><strong><?php _e( 'Upgrade to Store Exporter Deluxe to unlock business focused e-commerce features, including:', 'woocommerce-exporter' ); ?></strong></p>
+	<p class="clear"><strong><?php _e( 'Upgrade to Store Exporter Deluxe today!', 'woocommerce-exporter' ); ?></strong></p>
 	<ul class="ul-disc">
-		<li><?php _e( 'Native export support for 110+ Plugins', 'woocommerce-exporter' ); ?></li>
+		<li><?php _e( 'Native export support for 125+ Plugins', 'woocommerce-exporter' ); ?></li>
+		<li><?php _e( 'Premium Support', 'woocommerce-exporter' ); ?></li>
 		<li><?php _e( 'Select export date ranges', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Select export fields to export', 'woocommerce-exporter' ); ?></li>
+		<li><?php _e( 'Export Templates', 'woocommerce-exporter' ); ?></li>
 		<li><?php _e( 'Filter exports by multiple filter options', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export Orders', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export custom Order and Order Item meta', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export Customers', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export custom Customer meta', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export Coupons', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export custom User meta', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export Subscriptions', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export Product Vendors', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export Shipping Classes', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export Bookings', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export Tickets', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export Attributes', 'woocommerce-exporter' ); ?></li>
+		<li><?php _e( 'Export Orders, Customers, Coupons, Subscriptions, Product Vendors, Shippping Classes, Attributes, Bookings, Tickets and more', 'woocommerce-exporter' ); ?></li>
+		<li><?php _e( 'Export custom Order, Order Item, Customer, Subscription, Booking, User meta and more', 'woocommerce-exporter' ); ?></li>
 		<li><?php _e( 'CRON export engine', 'woocommerce-exporter' ); ?></li>
 		<li><?php _e( 'WP-CLI export engine', 'woocommerce-exporter' ); ?></li>
 		<li><?php _e( 'Schedule automatic exports with filtering options', 'woocommerce-exporter' ); ?></li>
@@ -151,16 +141,14 @@
 		<li><?php _e( 'Export to remote POST', 'woocommerce-exporter' ); ?></li>
 		<li><?php _e( 'Export to e-mail addresses', 'woocommerce-exporter' ); ?></li>
 		<li><?php _e( 'Export to remote FTP/FTPS/SFTP', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export to XML file', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export to RSS file', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Export to Excel 97-2003 (XLS) file', 'woocommerce-exporter' ); ?></li>
 		<li><?php _e( 'Export to Excel 2007-2013 (XLSX) file', 'woocommerce-exporter' ); ?></li>
-		<li><?php _e( 'Premium Support', 'woocommerce-exporter' ); ?></li>
+		<li><?php _e( 'Export to Excel 97-2003 (XLS) file', 'woocommerce-exporter' ); ?></li>
+		<li><?php _e( 'Export to XML, JSON and RSS file formats', 'woocommerce-exporter' ); ?></li>
 		<li><?php _e( '...and more.', 'woocommerce-exporter' ); ?></li>
 	</ul>
 	<p>
-		<a href="<?php echo $woo_cd_url; ?>" target="_blank" class="button"><?php _e( 'More Features', 'woocommerce-exporter' ); ?></a>&nbsp;
-		<a href="<?php echo $woo_cd_url; ?>" target="_blank" class="button button-primary"><?php _e( 'Buy Now', 'woocommerce-exporter' ); ?></a>
+		<a href="<?php echo $woo_cd_url; ?>" target="_blank" class="button button-primary"><?php _e( 'Upgrade Now', 'woocommerce-exporter' ); ?></a>
+		<a href="<?php echo $woo_cd_url; ?>" target="_blank" class="button"><?php _e( 'Tell me more', 'woocommerce-exporter' ); ?></a>&nbsp;
 	</p>
 </div>
 <!-- .overview-right -->

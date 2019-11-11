@@ -944,7 +944,10 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 	}
 
 	// WooCommerce Multilingual - https://wordpress.org/plugins/woocommerce-multilingual/
-	if( woo_ce_detect_wpml() && woo_ce_detect_export_plugin( 'wpml_wc' ) ) {
+	if(
+		woo_ce_detect_wpml() && 
+		woo_ce_detect_export_plugin( 'wpml_wc' )
+	) {
 		$fields[] = array(
 			'name' => 'language',
 			'label' => __( 'Language', 'woocommerce-exporter' ),
@@ -954,7 +957,10 @@ function woo_ce_extend_product_fields( $fields = array() ) {
 	}
 
 	// WooCommerce Jetpack - http://woojetpack.com/shop/wordpress-woocommerce-jetpack-plus/
-	if( woo_ce_detect_export_plugin( 'woocommerce_jetpack' ) || woo_ce_detect_export_plugin( 'woocommerce_jetpack_plus' ) ) {
+	if(
+		woo_ce_detect_export_plugin( 'woocommerce_jetpack' ) || 
+		woo_ce_detect_export_plugin( 'woocommerce_jetpack_plus' )
+	) {
 
 		// @mod - Needs alot of love in 2.4+, JetPack Plus, now Booster is huge
 
@@ -1695,6 +1701,55 @@ function woo_ce_get_wccf_product_properties() {
 	$product_fields = new WP_Query( $args );
 	if( !empty( $product_fields->posts ) ) {
 		return $product_fields->posts;
+	}
+
+}
+
+// WC Fields Factory - https://wordpress.org/plugins/wc-fields-factory/
+function woo_ce_get_wcff_admin_fields() {
+
+	$post_type = 'wccaf';
+	$args = array(
+		'post_type' => $post_type,
+		'post_status' => 'publish',
+		'posts_per_page' => -1,
+		'fields' => 'ids'
+	);
+	$admin_groups = new WP_Query( $args );
+	if( !empty( $admin_groups->posts ) ) {
+		$admin_fields = array();
+		$prefix = 'wccaf_';
+		$excluded_meta = array(
+			$prefix . 'condition_rules',
+			$prefix . 'location_rules',
+			$prefix . 'group_rules',
+			$prefix . 'pricing_rules',
+			$prefix . 'fee_rules',
+			$prefix . 'sub_fields_group_rules'
+		);
+		foreach( $admin_groups->posts as $post_id ) {
+			$meta = get_post_meta( $post_id );
+			foreach( $meta as $key => $meta_value ) {
+				// Meta name must contain the prefix
+				if( preg_match( '/' . $prefix . '/', $key ) ) {
+					// Skip default meta
+					if( !in_array( $key, $excluded_meta ) ) {
+						$meta_value = json_decode( $meta_value[0] );
+						if( !is_object( $meta_value ) )
+							continue;
+
+						$admin_fields[] = array(
+							'name' => $meta_value->name,
+							'label' => $meta_value->label,
+							'type' => $meta_value->type
+						);
+
+					}
+				}
+			}
+		}
+		unset( $admin_groups, $meta );
+		return $admin_fields;
 	}
 
 }

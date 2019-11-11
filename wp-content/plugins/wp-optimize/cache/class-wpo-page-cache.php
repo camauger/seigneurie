@@ -138,13 +138,45 @@ class WPO_Page_Cache {
 
 		if (!$this->is_enabled()) return;
 
+		$act_url = remove_query_arg(array('wpo_single_page_cache_purged', 'wpo_all_pages_cache_purged'));
+
 		if (!is_admin() || 'post.php' == $pagenow) {
 			$wp_admin_bar->add_menu(array(
 				'id'    => 'wpo_purge_cache',
-				'title' => 'Purge from cache',
-				'href'  => add_query_arg('_wpo_purge', wp_create_nonce('wpo_purge_single_page_cache')),
+				'title' => __('Purge cache', 'wp-optimize'),
+				'href'  => '#',
 				'meta'  => array(
-					'title' => __('Purge from cache', 'wp-optimize'),
+					'title' => __('Purge cache', 'wp-optimize'),
+				),
+				'parent' => false,
+			));
+
+			$wp_admin_bar->add_node(array(
+				'id'    => 'wpo_purge_this_page_cache',
+				'title' => __('Purge this page', 'wp-optimize'),
+				'href'  => add_query_arg('_wpo_purge', wp_create_nonce('wpo_purge_single_page_cache'), $act_url),
+				'meta'  => array(
+					'title' => __('Purge this page', 'wp-optimize'),
+				),
+				'parent' => 'wpo_purge_cache',
+			));
+
+			$wp_admin_bar->add_node(array(
+				'id'    => 'wpo_purge_all_pages_cache',
+				'title' => __('Purge all pages', 'wp-optimize'),
+				'href'  => add_query_arg('_wpo_purge', wp_create_nonce('wpo_purge_all_pages_cache'), $act_url),
+				'meta'  => array(
+					'title' => __('Purge all pages', 'wp-optimize'),
+				),
+				'parent' => 'wpo_purge_cache',
+			));
+		} else {
+			$wp_admin_bar->add_menu(array(
+				'id'    => 'wpo_purge_cache',
+				'title' => __('Purge all cache', 'wp-optimize'),
+				'href'  => add_query_arg('_wpo_purge', wp_create_nonce('wpo_purge_all_pages_cache'), $act_url),
+				'meta'  => array(
+					'title' => __('Purge all cache', 'wp-optimize'),
 				),
 				'parent' => false,
 			));
@@ -155,40 +187,90 @@ class WPO_Page_Cache {
 	 * Check if purge single page action sent and purge cache.
 	 */
 	public function handle_purge_single_page_cache() {
-		if (isset($_GET['wpo_cache_purged'])) {
-			add_action('admin_notices', array($this, 'notice_purge_single_page_cache'));
-		}
-
-		if (!isset($_GET['_wpo_purge']) || !wp_verify_nonce($_GET['_wpo_purge'], 'wpo_purge_single_page_cache')) return;
-
-		if (is_admin()) {
-			$post = isset($_GET['post']) ? (int) $_GET['post'] : 0;
-			if ($post > 0) {
-				self::delete_single_post_cache($post);
+		if (isset($_GET['wpo_single_page_cache_purged']) || isset($_GET['wpo_all_pages_cache_purged'])) {
+			if (isset($_GET['wpo_single_page_cache_purged'])) {
+				$notice_function = $_GET['wpo_single_page_cache_purged'] ? 'notice_purge_single_page_cache_success' : 'notice_purge_single_page_cache_error';
+			} else {
+				$notice_function = $_GET['wpo_all_pages_cache_purged'] ? 'notice_purge_all_pages_cache_success' : 'notice_purge_all_pages_cache_error';
 			}
-		} else {
-			self::delete_cache_by_url(wpo_current_url());
+
+			add_action('admin_notices', array($this, $notice_function));
+
+			return;
 		}
 
-		// remove nonce from url and reload page.
-		wp_redirect(add_query_arg('wpo_cache_purged', true, remove_query_arg('_wpo_purge')));
-		exit;
+		if (!isset($_GET['_wpo_purge'])) return;
+
+		if (wp_verify_nonce($_GET['_wpo_purge'], 'wpo_purge_single_page_cache')) {
+			$success = false;
+
+			if (is_admin()) {
+				$post = isset($_GET['post']) ? (int) $_GET['post'] : 0;
+				if ($post > 0) {
+					$success = self::delete_single_post_cache($post);
+				}
+			} else {
+				$success = self::delete_cache_by_url(wpo_current_url());
+			}
+
+			// remove nonce from url and reload page.
+			wp_redirect(add_query_arg('wpo_single_page_cache_purged', $success, remove_query_arg('_wpo_purge')));
+			exit;
+
+		} elseif (wp_verify_nonce($_GET['_wpo_purge'], 'wpo_purge_all_pages_cache')) {
+			$success = self::purge();
+
+			// remove nonce from url and reload page.
+			wp_redirect(add_query_arg('wpo_all_pages_cache_purged', $success, remove_query_arg('_wpo_purge')));
+			exit;
+		}
 	}
 
 	/**
-	 * Show notification when page cache purged.
+	 * Show notification when page cache purged successfully.
 	 */
-	public function notice_purge_single_page_cache() {
+	public function notice_purge_single_page_cache_success() {
+		$this->show_notice(__('The page cache was successfully purged.', 'wp-optimize'), 'success');
+	}
+
+	/**
+	 * Show notification when page cache wasn't purged.
+	 */
+	public function notice_purge_single_page_cache_error() {
+		$this->show_notice(__('The page cache was not purged.', 'wp-optimize'), 'error');
+	}
+
+	/**
+	 * Show notification when all pages cache purged successfully.
+	 */
+	public function notice_purge_all_pages_cache_success() {
+		$this->show_notice(__('All pages cache was successfully purged.', 'wp-optimize'), 'success');
+	}
+
+	/**
+	 * Show notification when all pages cache wasn't purged.
+	 */
+	public function notice_purge_all_pages_cache_error() {
+		$this->show_notice(__('All pages cache was not purged.', 'wp-optimize'), 'error');
+	}
+
+	/**
+	 * Show notification in WordPress admin.
+	 *
+	 * @param string $message HTML (no further escaping is performed)
+	 * @param string $type    error, warning, success, or info
+	 */
+	public function show_notice($message, $type) {
 		?>
-		<div class="notice notice-success is-dismissible">
-			<p><?php _e('The page cache was successfully purged.', 'wp-optimize'); ?></p>
+		<div class="notice notice-<?php echo $type; ?> is-dismissible">
+			<p><?php echo $message; ?></p>
 		</div>
 		<script>
 			window.addEventListener('load', function() {
 				(function(wp) {
 					wp.data.dispatch('core/notices').createNotice(
-						'success',
-						'<?php _e('The page cache was successfully purged.', 'wp-optimize'); ?>',
+						'<?php echo $type; ?>',
+						'<?php echo $message; ?>',
 						{
 							isDismissible: true,
 						}
@@ -684,19 +766,24 @@ EOF;
 	 * Delete cached files for specific url.
 	 *
 	 * @param string $url
+	 * @param bool   $recursive If true child elements will deleted too
+	 *
+	 * @return bool
 	 */
-	public static function delete_cache_by_url($url) {
-		if (!defined('WPO_CACHE_FILES_DIR')) return;
+	public static function delete_cache_by_url($url, $recursive = false) {
+		if (!defined('WPO_CACHE_FILES_DIR') || '' == $url) return;
 
 		$path = trailingslashit(WPO_CACHE_FILES_DIR) . trailingslashit(wpo_get_url_path($url));
 
-		wpo_delete_files($path, false);
+		return wpo_delete_files($path, $recursive);
 	}
 
 	/**
 	 * Delete cached files for single post.
 	 *
 	 * @param integer $post_id The post ID
+	 *
+	 * @return bool
 	 */
 	public static function delete_single_post_cache($post_id) {
 	
@@ -704,7 +791,7 @@ EOF;
 	
 		$path = trailingslashit(WPO_CACHE_FILES_DIR) . trailingslashit(wpo_get_url_path(get_permalink($post_id)));
 
-		wpo_delete_files($path, false);
+		return wpo_delete_files($path, false);
 	}
 
 	/**

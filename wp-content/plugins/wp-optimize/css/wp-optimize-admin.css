@@ -2331,3 +2331,12 @@ textarea.cache-settings {
 #wp-optimize-nav-tab-wpo_cache-advanced-contents label, #wp-optimize-nav-tab-wpo_cache-preload-contents label, #wp-optimize-nav-tab-wpo_cache-cache-contents label {
     font-weight: 600;
   }
+
+.wpo-gzip-already-enabled span.dashicons.dashicons-yes {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  color: green;
+}

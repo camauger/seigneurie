@@ -442,7 +442,6 @@ class Updraft_Smush_Manager extends Updraft_Task_Manager_1_2 {
 				'back_up_delete_after_days' => $this->options->get_option('back_up_delete_after_days', 7),
 				'preserve_exif' => $this->options->get_option('preserve_exif', false),
 				'autosmush' => $this->options->get_option('autosmush', false),
-				'image_quality' => $this->options->get_option('image_quality'),
 				'show_smush_metabox' => $this->options->get_option('show_smush_metabox', 'show') == 'show' ? true : false
 			);
 		}

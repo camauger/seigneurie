@@ -4,7 +4,7 @@ Donate link: https://david.dw-perspective.org.uk/donate
 Tags: cache, optimizing, database, image optimize, performance, clean, spam, speed, caching, smush, smushing
 Requires at least: 3.8
 Tested up to: 5.3
-Stable tag: 3.0.12
+Stable tag: 3.0.13
 License: GPLv2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -305,6 +305,19 @@ If you notice any issues due to high server load, set a higher interval for the 
 9. Features comparison
 
 == Changelog ==
+
+= 3.0.13 - 21/Oct/2019 =
+
+* FIX: Don't show VIEWs as corrupted database tables
+* TWEAK: Image compression - Cancel button now stops the compression process
+* TWEAK: Only show general notice when update notice isn't shown
+* TWEAK: Improve message when Gzip compression is already enabled
+* TWEAK: Premium - Use path to include lazy load script
+* TWEAK: Image compression - Use wp_remote_get() instead file_get_contents() for retrieving compressed images
+* TWEAK: Use wp_remote_get() instead file_get_contents() for retrieving compressed images
+* TWEAK: Cache feature - add a 'Purge all' cache button to the admin bar
+* TWEAK: Premium - Prevent php warning in scheduled optimisations list
+* TWEAK: Premium - Unused images feature - Add compatibility with Advanced Custom Fields (ACF) image and gallery fields
 
 = 3.0.12 - 24/Sep/2019 =
 
@@ -788,4 +801,4 @@ If you notice any issues due to high server load, set a higher interval for the 
 * Fix Interface
 
 == Upgrade Notice ==
-* 3.0.12: Display to user the content of advanced-cache.php if it was not writable. Image compression metabox now inherits the settings from the main screen. Added WooCommerce support for lazy load.
+* 3.0.13: Cache feature to add a Purge all cache button to the admin bar. Premium fetures to Prevent php warning in scheduled optimisations list. Premium Unused images feature to Add compatibility with Advanced Custom Fields (ACF) image and gallery fields.

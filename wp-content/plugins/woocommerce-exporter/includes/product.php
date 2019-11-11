@@ -496,14 +496,17 @@ function woo_ce_get_products( $args = array() ) {
 		if( isset( $args['product_order'] ) )
 			$order = $args['product_order'];
 	}
-	$post_type = array( 'product', 'product_variation' );
+
+	$post_type = apply_filters( 'woo_ce_get_products_post_type', array( 'product', 'product_variation' ) );
+	$post_status = apply_filters( 'woo_ce_get_products_status', array( 'publish', 'pending', 'draft', 'future' ) );
+
 	$args = array(
 		'post_type' => $post_type,
 		'orderby' => $orderby,
 		'order' => $order,
 		'offset' => $offset,
 		'posts_per_page' => $limit_volume,
-		'post_status' => woo_ce_post_statuses(),
+		'post_status' => woo_ce_post_statuses( $post_status, true ),
 		'fields' => 'ids',
 		'suppress_filters' => false
 	);

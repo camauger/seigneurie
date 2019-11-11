@@ -23,7 +23,7 @@ function affwp_process_add_affiliate( $data ) {
 	}
 
 	if ( ! username_exists( $data['user_name'] ) && is_numeric( $data['user_name'] ) ) {
-		$errors[ 'invalid_username_numeric' ] = __( 'Invalid user login name. User login name must include at least one letter', 'affiliate_wp' );
+		$errors[ 'invalid_username_numeric' ] = __( 'Invalid user login name. User login name must include at least one letter', 'affiliate-wp' );
 	}
 
 	if ( ! username_exists( $data['user_name'] ) && mb_strlen( $data['user_name'] ) < 4 || mb_strlen( $data['user_name'] ) > 60 ) {

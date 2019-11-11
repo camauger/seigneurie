@@ -14099,3 +14099,6 @@
 [2019-10-09 20:01:00 : INFO] - openssl: OpenSSL 1.1.1b  26 Feb 2019 
 [2019-10-09 20:01:00 : INFO] - The queue for tasks of type "smush" is empty. Aborting! 
 [2019-10-18 12:30:55 : INFO] - Re_Smush_It_Task with attachment ID : 4201, autocreated on : October 18, 2019 12:30:55 
+[2019-11-08 16:13:21 : INFO] - Could not find file for image: ID=2697, file=/home2/usrseigneuriei01/public_html/wp-content/uploads/2018/03/Découvrez-notre-nouvelle-collection-Ro.jpg 
+[2019-11-08 16:13:21 : INFO] - Could not find file for image: ID=1619, file=/home2/usrseigneuriei01/public_html/wp-content/uploads/2016/05/téléchargement.jpg 
+[2019-11-08 16:13:21 : INFO] - Could not find file for image: ID=142, file=/home2/usrseigneuriei01/public_html/wp-content/uploads/2016/04/Bi-phasé-démaquillant-au-concombre.jpg 

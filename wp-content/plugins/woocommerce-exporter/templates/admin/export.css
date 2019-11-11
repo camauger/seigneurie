@@ -28,13 +28,12 @@
 			font-weight:normal;
 		}
 	#woo-ce .overview-right p {
-		font-size:12px;
 		color:#333;
 		line-height:1.6em;
 	}
 	#woo-ce .overview-right ul {
 		font-size:12px;
-		line-height:1.2em;
+		line-height:1.6em;
 	}
 
 /* Export */
@@ -150,7 +149,7 @@ body.post-type-export_template div#message-max_input_vars {
 #woo-ce .support-donate_rate {
 	display:block;
 	float:right;
-	width:50%;
+	width:auto;
 	text-align:right;
 }
 #woo-ce .support-donate_rate p {

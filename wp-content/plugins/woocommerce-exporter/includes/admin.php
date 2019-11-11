@@ -312,6 +312,29 @@ function woo_ce_tab_template( $tab = '' ) {
 
 	$troubleshooting_url = 'http://www.visser.com.au/documentation/store-exporter-deluxe/';
 
+	if( in_array( $tab, array( 'export', 'scheduled_export', 'export_template', 'settings', 'tools' ) ) ) {
+
+		// Upgrade notice for Quick Export screen
+		if(
+			woo_ce_get_option( 'show_upgrade_prompt', 0 ) && 
+			!woo_ce_get_option( 'dismiss_upgrade_prompt', 0 )
+		) {
+			$dismiss_url = esc_url( add_query_arg( array( 'action' => 'dismiss_upgrade_prompt', '_wpnonce' => wp_create_nonce( 'woo_ce_dismiss_upgrade_prompt' ) ) ) );
+			$message = '';
+			$message .= '<span style="float:right;">';
+			$message .= '<a href="' . $woo_cd_url . '" target="_blank" class="button button-primary">' . __( 'Upgrade now', 'woocommerce-exporter' ) . '</a>' . '&nbsp;';
+			$message .= '<a href="' . $woo_cd_url . '" target="_blank" class="button">' . __( 'Tell me more', 'woocommerce-exporter' ) . '</a>' . '<br />';
+			$message .= '<a href="' . $dismiss_url . '" style="float: right; margin-top:0.5em;">' . __( 'Dismiss', 'woocommerce-exporter' ) . '</a>';
+			$message .= '</span>';
+			$message .= '<img src="'  . plugins_url( '/templates/admin/images/icon.png', WOO_CE_RELPATH ) . '" alt="" style="height:64px; margin-right:0.5em; float:left;" />';
+			$message .= '<strong>' . __( 'Unlock business focused WooCommerce exports. Scheduled Exports, Export Templates, Order, Customer, Subscription exports and more!', 'woocommerce-exporter' ) . '</strong> ';
+			$message .= '<br />' . sprintf( __( 'Upgrade to %s to unlock all of the business-focused features, filters and options.', 'woocommerce-exporter' ), $woo_cd_link );
+			$message .= '<br class="clear" />';
+			woo_ce_admin_notice_html( $message, 'updated' );
+		}
+
+	}
+
 	switch( $tab ) {
 
 		case 'overview':

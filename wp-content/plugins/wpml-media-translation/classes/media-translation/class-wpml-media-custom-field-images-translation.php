@@ -88,10 +88,10 @@ class WPML_Media_Custom_Field_Images_Translation implements IWPML_Action {
 
 	/**
 	 * @param string $meta_value
+	 * @param string $meta_key
 	 * @param string $target_language
 	 * @param string $source_language
-	 * @param string $meta_key
-	 * @param int $post_id
+	 * @param int    $post_id
 	 *
 	 * @return string
 	 */
@@ -102,9 +102,11 @@ class WPML_Media_Custom_Field_Images_Translation implements IWPML_Action {
 			$source_language
 		);
 
-		remove_action( 'updated_post_meta', array( $this, 'translate_images' ), PHP_INT_MAX, 4 );
-		update_post_meta( $post_id, $meta_key, wp_slash( $meta_value_filtered ), $meta_value );
-		add_action( 'updated_post_meta', array( $this, 'translate_images' ), PHP_INT_MAX, 4 );
+		if ( $meta_value_filtered !== $meta_value ) {
+			remove_action( 'updated_post_meta', array( $this, 'translate_images' ), PHP_INT_MAX, 4 );
+			update_post_meta( $post_id, $meta_key, wp_slash( $meta_value_filtered ), $meta_value );
+			add_action( 'updated_post_meta', array( $this, 'translate_images' ), PHP_INT_MAX, 4 );
+		}
 
 		return $meta_value_filtered;
 	}

@@ -4,6 +4,8 @@
  * Class WPML_Media_Translations_UI
  */
 class WPML_Media_Translations_UI extends WPML_Templates_Factory {
+	const PREVIEW_MAX_WIDTH  = 800;
+	const PREVIEW_MAX_HEIGHT = 600;
 	/**
 	 * @var SitePress
 	 */
@@ -260,7 +262,12 @@ class WPML_Media_Translations_UI extends WPML_Templates_Factory {
 				'meta'         => get_post_meta( $attachment_id, '_wp_attachment_metadata', true ),
 				'language'     => $post_element->get_language_code(),
 				'thumb'        => $this->get_attachment_thumb( $attachment_id, $is_image ),
-				'translations' => $translations
+				'url'          => $is_image ? $this->get_attachment_url( $attachment_id ) : '',
+				'translations' => $translations,
+				'preview'      => [
+					'width'  => self::PREVIEW_MAX_WIDTH,
+					'height' => self::PREVIEW_MAX_HEIGHT,
+				],
 			);
 
 		}
@@ -270,6 +277,17 @@ class WPML_Media_Translations_UI extends WPML_Templates_Factory {
 
 	/**
 	 * @param int $attachment_id
+	 *
+	 * @return array
+	 */
+	private function get_attachment_url( $attachment_id ) {
+		$image = wp_get_attachment_image_src( $attachment_id, [ self::PREVIEW_MAX_WIDTH, self::PREVIEW_MAX_HEIGHT ] );
+
+		return $image[0];
+	}
+
+	/**
+	 * @param int  $attachment_id
 	 * @param bool $is_image
 	 *
 	 * @return array

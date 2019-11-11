@@ -19,7 +19,8 @@ if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
 
 		// Add New Woocommerce 3.0.0 Product Gallery support.
 		add_theme_support( 'wc-product-gallery-lightbox' );
-		add_theme_support( 'wc-product-gallery-zoom' );
+		//add_theme_support( 'wc-product-gallery-zoom' );
+		// NOTE: le zoom d'image est désactivé parce que non pertinent
 		add_theme_support( 'wc-product-gallery-slider' );
 
 		// hook in and customizer form fields.

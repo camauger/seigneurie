@@ -97,7 +97,8 @@ class WPML_ST_Strings {
 
 		}
 
-		$extra_cond .= '';
+		$extra_cond .= $this->exclude_packages_clause();
+
 		if ( isset( $context ) ) {
 			$extra_cond .= " AND s.context = '" . esc_sql( $context ) . "'";
 		}
@@ -279,6 +280,8 @@ class WPML_ST_Strings {
 				$extra_cond .= " AND s.status IN (" . ICL_STRING_TRANSLATION_PARTIAL . "," . ICL_TM_NEEDS_UPDATE . "," . ICL_TM_NOT_TRANSLATED . ")";
 			}
 		}
+
+		$extra_cond .= $this->exclude_packages_clause();
 
 		if ( icl_st_is_translator() ) {
 			$user_langs = get_user_meta( $current_user->ID, $this->wpdb->prefix . 'language_pairs', true );
@@ -515,4 +518,7 @@ class WPML_ST_Strings {
 		return isset( $_GET['show_results'] ) && $_GET['show_results'] === 'all';
 	}
 
+	private function exclude_packages_clause() {
+		return ' AND s.string_package_id IS NULL';
+	}
 }

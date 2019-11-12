@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
-		<!-- <img class="img-responsive bg-footer" src="https://seigneurieiledorleans.com/wp-content/themes/prospecteur/images/bg-bottom-2.png" alt="" title=""> -->
+		<!-- <img class="img-responsive bg-footer" src="https://seigneurieiledorleans.com/wp-content/themes/understrap/images/bg-bottom-2.png" alt="" title=""> -->
 		<div class="row">
 
 			<div class="col footer-note">

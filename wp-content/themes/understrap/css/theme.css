@@ -11705,7 +11705,7 @@ figure.woocommerce-product-gallery__wrapper {
 
 .home-cards .box--large-1 {
   border-bottom: 2px solid white;
-  background-image: url("https://seigneurieiledorleans.com/wp-content/themes/prospecteur/images/accueil/sio-bg-seigneurie-fontaine.jpg");
+  background-image: url("https://seigneurieiledorleans.com/wp-content/themes/understrap/images/accueil/sio-bg-seigneurie-fontaine.jpg");
   background-position: center; }
 
 .home-cards .box--large-2 {
@@ -11888,7 +11888,7 @@ nav.navbar {
     display: block; }
 
 .top-header-banner__above-menu {
-  background-image: url("https://seigneurieiledorleans.com/wp-content/themes/prospecteur/images/bg-sous-logo-1240.png");
+  background-image: url("https://seigneurieiledorleans.com/wp-content/themes/understrap/images/bg-sous-logo-1240.png");
   height: 120px;
   width: 100%;
   background-size: contain;
@@ -12126,7 +12126,7 @@ body {
 
 @media (min-width: 1200px) {
   .footer-note {
-    background-image: url("https://seigneurieiledorleans.com/wp-content/themes/prospecteur/images/bg-bottom-2.png");
+    background-image: url("https://seigneurieiledorleans.com/wp-content/themes/understrap/images/bg-bottom-2.png");
     background-position: center;
     background-repeat: no-repeat;
     height: 125px;

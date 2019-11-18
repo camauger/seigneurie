@@ -20,3 +20,5 @@
 {"user_id":3,"user_login":"Mary","user_remoteaddr":"74.58.210.116","user_hostname":"modemcable116.210-58-74.mc.videotron.ca","user_lastlogin":"2019-11-15 13:07:05"}
 {"user_id":3,"user_login":"Mary","user_remoteaddr":"142.169.78.135","user_hostname":"142.169.78.135","user_lastlogin":"2019-11-15 13:07:08"}
 {"user_id":3,"user_login":"Mary","user_remoteaddr":"74.58.210.116","user_hostname":"modemcable116.210-58-74.mc.videotron.ca","user_lastlogin":"2019-11-15 14:44:49"}
+{"user_id":2,"user_login":"asterix","user_remoteaddr":"205.236.54.50","user_hostname":"205.236.54.50","user_lastlogin":"2019-11-18 09:43:04"}
+{"user_id":2,"user_login":"asterix","user_remoteaddr":"205.236.54.4","user_hostname":"205.236.54.4","user_lastlogin":"2019-11-18 09:46:06"}

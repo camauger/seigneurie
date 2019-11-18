@@ -18,6 +18,8 @@ function affwp_process_add_affiliate( $data ) {
 		return false;
 	}
 
+	$data = array_map( 'trim', $data );
+
 	if ( ! current_user_can( 'manage_affiliates' ) ) {
 		wp_die( __( 'You do not have permission to manage affiliates', 'affiliate-wp' ), __( 'Error', 'affiliate-wp' ), array( 'response' => 403 ) );
 	}

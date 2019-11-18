@@ -123,7 +123,7 @@ class Affiliate_WP_Admin_Notices {
 
 		$integrations = affiliate_wp()->integrations->get_enabled_integrations();
 
-		if ( empty( $integrations ) /*&& ! get_user_meta( get_current_user_id(), '_affwp_no_integrations_dismissed', true )*/ ) {
+		if ( empty( $integrations ) && ! get_user_meta( get_current_user_id(), '_affwp_no_integrations_dismissed', true ) ) {
 			$output .= self::show_notice( 'no_integrations', false );
 		}
 

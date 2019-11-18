@@ -1,4 +1,5 @@
 Options -Indexes
+Header set Strict-Transport-Security: "max-age=31536000 ; includeSubDomains ;" env=HTTPS
 Header set X-Content-Type-Options nosniff
 Header set X-XSS-Protection "1; mode=block"
 # Wordfence WAF
@@ -11,10 +12,16 @@ Header set X-XSS-Protection "1; mode=block"
 		Deny from all
 	</IfModule>
 </Files>
-
 # END Wordfence WAF
 
-
+# BEGIN rlrssslReallySimpleSSL rsssl_version[3.2.6]
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTPS} !=on [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+# END rlrssslReallySimpleSSL
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 	RewriteEngine On
@@ -24,17 +31,13 @@ Header set X-XSS-Protection "1; mode=block"
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule . /index.php [L]
 </IfModule>
-
 # END WordPress
-
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php73” package as the default “PHP” programming language.
 <IfModule mime_module>
 	AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
-
-
 # BEGIN cPanel-generated php ini directives, do not edit
 # Manual editing of this file may result in unexpected behavior.
 # To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
@@ -64,7 +67,6 @@ Header set X-XSS-Protection "1; mode=block"
 	php_flag zlib.output_compression On
 </IfModule>
 # END cPanel-generated php ini directives, do not edit
-
 # BEGIN WP-Optimize Gzip compression
 <IfModule mod_filter.c>
 	<IfModule mod_deflate.c>
@@ -124,7 +126,6 @@ Header set X-XSS-Protection "1; mode=block"
 	ExpiresByType application/x-shockwave-flash "access 28 days"
 	ExpiresDefault "access 28 days"
 </IfModule>
-
 <IfModule mod_headers.c>
 	<filesMatch "\.(ico|jpe?g|png|gif|webp|swf)$">
 		Header set Cache-Control "public"
@@ -139,7 +140,6 @@ Header set X-XSS-Protection "1; mode=block"
 		Header set Cache-Control "private, must-revalidate"
 	</filesMatch>
 </IfModule>
-
 #Disable ETag
 FileETag None
 # END WP-Optimize Browser Cache

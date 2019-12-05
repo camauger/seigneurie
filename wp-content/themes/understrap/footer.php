@@ -7,8 +7,9 @@
  * @package understrap
  */
 
-// Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>

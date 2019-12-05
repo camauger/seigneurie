@@ -7,8 +7,9 @@
  * @package understrap
  */
 
-// Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
@@ -22,15 +23,80 @@ $container = get_theme_mod( 'understrap_container_type' );
 </head>
 
 <body <?php body_class(); ?>>
-<?php do_action( 'wp_body_open' ); ?>
-<div class="site" id="page">
 
+<div class="site" id="page">
+	<!-- image header -->
+	<?php $bannerUrl = get_post_meta($post->ID, 'banniere-photo', true); ?>
+	<?php if ($bannerUrl === '') { ?>
+		<div class="top-header-banner__image" style="background-image: url('https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/bg-champ-lavande.jpg');">
+	<?php } else { ?>
+
+		<div class="top-header-banner__image" style="background-image: url('<?php echo $bannerUrl; ?>');">
+	<?php
+	}
+	 ?>
+	<div class="top-header-banner">
+		<div class="top-header-banner__text">
+			<span>La santé et la beauté<br>
+se conjuguent au même temps... au présent!</span>
+		</div>
+		<div class="top-header-banner__logo">
+			<a href="/">
+			<img src="https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/sio-logo.png" alt="Seigneurie de l'Île d'Orélans">
+			</a>
+		</div>
+		<div class="top-header-banner__above-menu">
+			<div class="above-menu__text--small">
+			</div>
+			<div class="above-menu__text--big">
+			</div>
+		</div>
+			</div>
+					</div>
+
+					<div class="clearfix">
+
+					</div>
 	<!-- ******************* The Navbar Area ******************* -->
+	<div class="container">
+		<?php wp_nav_menu(
+			array(
+				'theme_location'  => 'topmenu',
+				'container_class' => 'top-menu-nav__lg',
+				'menu_class'      => 'nav',
+				'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+			)
+		); ?>
+	</div>
+	<div class="container fixed-top">
+		<?php wp_nav_menu(
+			array(
+				'theme_location'  => 'topmenu',
+				'container_class' => 'top-menu-nav__sm',
+				'menu_class'      => 'nav',
+				'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+			)
+		); ?>
+	</div>
+
+
+
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+
+		<div class="deco-left">
+			<img src="https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/sio-ferronerie-gauche-1.png" alt="">
+		</div>
+		<div class="deco-right">
+			<img src="https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/sio-ferronerie-droite-1.png" alt="">
+		</div>
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+
+
+
+
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary container">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
@@ -41,11 +107,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<?php if ( is_front_page() && is_home() ) : ?>
 
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+							<!-- <h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1> -->
 
 						<?php else : ?>
 
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+							<!-- <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a> -->
 
 						<?php endif; ?>
 
@@ -59,12 +125,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</button>
 
 				<!-- The WordPress Menu goes here -->
+				<div class="navbar-brand">
+
+				</div>
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
+						'menu_class'      => 'navbar-nav justify-content-center',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,

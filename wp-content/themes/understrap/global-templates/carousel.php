@@ -6,7 +6,7 @@
 
 
             <img class="img-responsive"
-                src="https://seigneurieiledorleans.com/contenu/prospecteur/uploads/2018/06/bandeau-2019.png" alt=""
+                src="https://seigneurieiledorleans.com/wp-content/understrap/uploads/2018/06/bandeau-2019.png" alt=""
                 title="">
 
         </div>

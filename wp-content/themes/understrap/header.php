@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- image header -->
 	<?php $bannerUrl = get_post_meta($post->ID, 'banniere-photo', true); ?>
 	<?php if ($bannerUrl === '') { ?>
-		<div class="top-header-banner__image" style="background-image: url('https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/bg-champ-lavande.jpg');">
+		<div class="top-header-banner__image" style="background-image: url('https://seigneurieiledorleans.com/wp-content/understrap/themes/prospecteur/images/bg-champ-lavande.jpg');">
 	<?php } else { ?>
 
 		<div class="top-header-banner__image" style="background-image: url('<?php echo $bannerUrl; ?>');">
@@ -42,7 +42,7 @@ se conjuguent au même temps... au présent!</span>
 		</div>
 		<div class="top-header-banner__logo">
 			<a href="/">
-			<img src="https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/sio-logo.png" alt="Seigneurie de l'Île d'Orélans">
+			<img src="https://seigneurieiledorleans.com/wp-content/understrap/themes/prospecteur/images/sio-logo.png" alt="Seigneurie de l'Île d'Orélans">
 			</a>
 		</div>
 		<div class="top-header-banner__above-menu">
@@ -84,10 +84,10 @@ se conjuguent au même temps... au présent!</span>
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<div class="deco-left">
-			<img src="https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/sio-ferronerie-gauche-1.png" alt="">
+			<img src="https://seigneurieiledorleans.com/wp-content/understrap/themes/prospecteur/images/sio-ferronerie-gauche-1.png" alt="">
 		</div>
 		<div class="deco-right">
-			<img src="https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/sio-ferronerie-droite-1.png" alt="">
+			<img src="https://seigneurieiledorleans.com/wp-content/understrap/themes/prospecteur/images/sio-ferronerie-droite-1.png" alt="">
 		</div>
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>

@@ -1,31 +1,16 @@
-/* carousel featured products */
-.carousel-accueil-produits {
-  margin-bottom: 20px;
+//** CAROUSEL */
+.carousel {
+  margin-bottom: 40px;
   img {
-    display: block;
-    margin: auto;
-    max-height: 300px;
+    max-height: 500px;
+    object-fit: contain;
   }
 }
-.carousel-feature-inner,
-.carousel-inner {
-  @extend .container;
-}
-
-.carousel-item {
-  background: $gradient-purple;
-}
-
-.carousel-feature {
-  @extend .col-sm-12;
-  @extend .col-md-8;
-  background: $gradient-purple;
-  color: white;
-  padding: 20px;
-}
-
-.carousel-image {
-  @extend .col-sm-12;
-  @extend .col-md-4;
-  padding: 0;
+.carousel-caption {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $mauve;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }

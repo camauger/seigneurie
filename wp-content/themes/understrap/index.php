@@ -11,9 +11,8 @@
  * @package understrap
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 get_header();
 
@@ -21,8 +20,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php if ( is_front_page() && is_home() ) : ?>
-
-	<?php get_template_part( 'global-templates/carousel' ); ?>
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
 
@@ -36,8 +33,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
-
-
 
 				<?php if ( have_posts() ) : ?>
 

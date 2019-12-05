@@ -7,9 +7,8 @@
  * @package understrap
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 get_header();
 $container = get_theme_mod( 'understrap_container_type' );
@@ -19,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
-		<div class="left-sidebar-page-content-order">
+		<div class="row">
 
 			<?php get_template_part( 'sidebar-templates/sidebar', 'left' ); ?>
 

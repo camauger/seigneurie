@@ -5,9 +5,8 @@
  * @package understrap
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 if ( ! is_active_sidebar( 'left-sidebar' ) ) {
 	return;
@@ -22,16 +21,6 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 <?php else : ?>
 	<div class="col-md-4 widget-area" id="left-sidebar" role="complementary">
 <?php endif; ?>
-
-<?php if ( ! is_woocommerce() ) {
-	// code...
-	dynamic_sidebar( 'left-sidebar' );
-} else {
-	// code...
-	dynamic_sidebar( 'right-sidebar');
-}
- ?>
-
-<!-- <?php dynamic_sidebar( 'left-sidebar' ); ?> -->
+<?php dynamic_sidebar( 'left-sidebar' ); ?>
 
 </div><!-- #left-sidebar -->

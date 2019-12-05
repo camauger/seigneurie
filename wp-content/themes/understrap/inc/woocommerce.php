@@ -5,9 +5,8 @@
  * @package understrap
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 add_action( 'after_setup_theme', 'understrap_woocommerce_support' );
 if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
@@ -19,8 +18,7 @@ if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
 
 		// Add New Woocommerce 3.0.0 Product Gallery support.
 		add_theme_support( 'wc-product-gallery-lightbox' );
-		//add_theme_support( 'wc-product-gallery-zoom' );
-		// NOTE: le zoom d'image est désactivé parce que non pertinent
+		add_theme_support( 'wc-product-gallery-zoom' );
 		add_theme_support( 'wc-product-gallery-slider' );
 
 		// hook in and customizer form fields.
@@ -29,14 +27,14 @@ if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
 }
 
 /**
-* First unhook the WooCommerce wrappers
-*/
+ * First unhook the WooCommerce wrappers
+ */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
 
 /**
-* Then hook in your own functions to display the wrappers your theme requires
-*/
+ * Then hook in your own functions to display the wrappers your theme requires
+ */
 add_action( 'woocommerce_before_main_content', 'understrap_woocommerce_wrapper_start', 10 );
 add_action( 'woocommerce_after_main_content', 'understrap_woocommerce_wrapper_end', 10 );
 if ( ! function_exists( 'understrap_woocommerce_wrapper_start' ) ) {
@@ -137,5 +135,29 @@ if ( ! function_exists( 'understrap_wc_form_field_args' ) ) {
 				break;
 		} // end switch ($args).
 		return $args;
+	}
+}
+
+if ( ! is_admin() && ! function_exists( 'wc_review_ratings_enabled' ) ) {
+	/**
+	 * Check if reviews are enabled.
+	 *
+	 * Function introduced in WooCommerce 3.6.0., include it for backward compatibility.
+	 *
+	 * @return bool
+	 */
+	function wc_reviews_enabled() {
+		return 'yes' === get_option( 'woocommerce_enable_reviews' );
+	}
+
+	/**
+	 * Check if reviews ratings are enabled.
+	 *
+	 * Function introduced in WooCommerce 3.6.0., include it for backward compatibility.
+	 *
+	 * @return bool
+	 */
+	function wc_review_ratings_enabled() {
+		return wc_reviews_enabled() && 'yes' === get_option( 'woocommerce_enable_review_rating' );
 	}
 }

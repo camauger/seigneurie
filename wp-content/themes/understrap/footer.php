@@ -7,9 +7,8 @@
  * @package understrap
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
@@ -19,19 +18,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
-		<!-- <img class="img-responsive bg-footer" src="https://seigneurieiledorleans.com/wp-content/themes/understrap/images/bg-bottom-2.png" alt="" title=""> -->
+
 		<div class="row">
 
-			<div class="col footer-note">
-<ul>
-	<li>Tous droits réservés © 2019 Seigneurie île d'Orléans </li>
-	<li> - <a href="mailto:info@seigneurieiledorleans.com" title="info@seigneurieiledorleans.com">info@seigneurieiledorleans.com</a> - </li>
-	<li>(418) 829-0476</li>
-</ul>
+			<div class="col-md-12">
 
+				<footer class="site-footer" id="colophon">
 
+					<div class="site-info">
 
-            </div>
+						<?php understrap_site_info(); ?>
+
+					</div><!-- .site-info -->
+
+				</footer><!-- #colophon -->
+
+			</div><!--col end -->
 
 		</div><!-- row end -->
 
@@ -46,3 +48,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 </body>
 
 </html>
+

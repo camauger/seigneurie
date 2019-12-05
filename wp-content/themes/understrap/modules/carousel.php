@@ -5,37 +5,37 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-        <div class="carousel-item active">
+        <!-- <div class="carousel-item active">
             <a href="<?php echo ($post->slideUrlOne) ?>">
                 <img src="<?php echo ($post->slideImgOne) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleOne) ?>">
                 <div class="carousel-caption d-none d-md-block">
                     <h5><?php echo ($post->slideTitleOne) ?></h5>
                     <p><?php echo ($post->slideTextOne) ?></p>
             </a>
-        </div>
+        </div> -->
 
-        <div class="carousel-item">
+        <div class="carousel-item active">
             <a href="<?php echo ($post->slideUrlOne) ?>">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
+                <div class="">
+                    <div class="">
+                        <div class="">
                             <img src="<?php echo ($post->slideImgOne) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleOne) ?>">
                         </div>
-                        <div class="col-6">
+                        <div class="">
                             <h5><?php echo ($post->slideTitleOne) ?></h5>
                             <p><?php echo ($post->slideTextOne) ?></p>
                         </div>
                     </div>
             </a>
         </div>
-        <div class="carousel-item active">
+        <!-- <div class="carousel-item">
             <a href="<?php echo ($post->slideUrlOne) ?>">
                 <img src="<?php echo ($post->slideImgOne) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleOne) ?>">
                 <div class="carousel-caption d-none d-md-block">
                     <h5><?php echo ($post->slideTitleOne) ?></h5>
                     <p><?php echo ($post->slideTextOne) ?></p>
-            </a>
-        </div>
+            </a> -->
+        <!-- </div> -->
     </div>
 </div>
 

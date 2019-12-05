@@ -14,32 +14,32 @@
                 </div>
             </a>
         </div>
-        <!-- <div class="carousel-item">
-            <a href="<?php echo ($post->slideUrlOne) ?>">
-                <img src="<?php echo ($post->slideImgOne) ?>" class="d-block" alt="<?php echo ($post->slideTitleOne) ?>">
+        <div class="carousel-item">
+            <a href="<?php echo ($post->slideUrlTwo) ?>">
+                <img src="<?php echo ($post->slideImgTwo) ?>" class="d-block" alt="<?php echo ($post->slideTitleTwo) ?>">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5><?php echo ($post->slideTitleOne) ?></h5>
-                    <p><?php echo ($post->slideTextOne) ?></p>
+                    <h5><?php echo ($post->slideTitleTwo) ?></h5>
+                    <p><?php echo ($post->slideTextTwo) ?></p>
                 </div>
             </a>
         </div>
         <div class="carousel-item">
-            <a href="<?php echo ($post->slideUrlOne) ?>">
-                <img src="<?php echo ($post->slideImgOne) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleOne) ?>">
+            <a href="<?php echo ($post->slideUrlThree) ?>">
+                <img src="<?php echo ($post->slideImgThree) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleThree) ?>">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5><?php echo ($post->slideTitleOne) ?></h5>
-                    <p><?php echo ($post->slideTextOne) ?></p>
+                    <h5><?php echo ($post->slideTitleThree) ?></h5>
+                    <p><?php echo ($post->slideTextThree) ?></p>
                 </div>
             </a>
-        </div> -->
+        </div>
     </div>
 
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only"><?php __('Previous', 'Carousel') ?></span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only"><?php __('Next', 'Carousel') ?></span>
     </a>
 </div>

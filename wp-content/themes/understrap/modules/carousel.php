@@ -41,7 +41,7 @@
         </div>
         <?php } ?>
     </div>
-
+    <?php if ($post->slideImgTwo != '') { ?>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only"><?php __('Previous', 'Carousel') ?></span>
@@ -50,4 +50,5 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only"><?php __('Next', 'Carousel') ?></span>
     </a>
+    <?php } ?>
 </div>

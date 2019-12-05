@@ -1,1 +1,278 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// Font Face pour la police de caractère utilisée dans la bannière de l'acceuil //
+@font-face {
+  font-family: "tagettesregular";
+  src: url("img/tagetts-webfont.eot");
+  src: url("img/tagetts-webfont.eot?#iefix") format("embedded-opentype"),
+    url("img/tagetts-webfont.woff2") format("woff2"),
+    url("img/tagetts-webfont.woff") format("woff"),
+    url("img/tagetts-webfont.ttf") format("truetype"),
+    url("img/tagetts-webfont.svg#tagettesregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Importation des fichiers partiaux */
+@import "themehome";
+@import "themenav";
+@import "themecarousel";
+@import "themeheader";
+@import "themewoo";
+/* Headings */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.h1,
+h1 {
+  color: $gris-heading;
+  border-bottom: 1px dotted $gris-clair;
+  margin-bottom: 25px;
+}
+/* Links */
+/* Lists */
+ol,
+ul {
+  list-style: inside;
+  padding-left: 16px;
+}
+/* Sidebar navigation */
+
+.menu-navigation-complete-container {
+  @extend .container;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .current-menu-item {
+    background-color: $primary;
+  }
+
+  a {
+    width: 100%;
+    display: block;
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    background: $gris-fonce;
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  ul.sub-menu a {
+    padding-left: 10px;
+  }
+
+  ul.sub-menu > a {
+    padding-bottom: 4px;
+  }
+
+  ul.sub-menu a:before {
+    content: "\f0da";
+    /* FontAwesome Unicode */
+    color: white;
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  ul.sub-menu li a:hover {
+    background: $primary;
+  }
+
+  #menu-navigation-complete > li {
+    border-bottom: 1px solid white;
+  }
+
+  > ul li a:hover {
+    background: $primary;
+  }
+}
+/* Facebook */
+.textwidget.custom-html-widget {
+  @extend .container; // pour aligner le widget avec le menu de navigation du sidebar de gauche
+}
+
+.box--facebook {
+  @extend .container;
+  margin-bottom: 16px;
+  background-color: $gris-clair;
+  border: 1px solid $gris-fonce;
+  padding: 16px;
+  a {
+    font-size: 18px;
+  }
+  img {
+    padding-right: 5px;
+  }
+}
+
+.box--experience {
+  @extend .container;
+  border: 1px solid $gris-clair;
+  margin-bottom: 40px;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+}
+
+body {
+  background-color: $body-background-color;
+}
+
+#content {
+  background: white;
+  border: 1px solid $gris-clair;
+  padding-top: 30px;
+}
+
+#page-wrapper {
+  padding-top: 0;
+}
+/* liste activités */
+.page-template-page-activites {
+  .activite {
+    @extend .col-lg-6;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+
+    .activite-wrapper {
+      @extend .col;
+      padding: 0;
+      border: 1px solid $gris-clair;
+    }
+
+    a {
+      h3 {
+        font-size: 24px;
+      }
+      padding: 20px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    div.date-evenement {
+      text-align: center;
+
+      i {
+        padding-right: 10px;
+      }
+
+      i,
+      span {
+        display: inline-block;
+        color: white;
+      }
+      background: $gradient-purple;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    div.entry-meta {
+      text-align: center;
+    }
+  }
+}
+/* footer */
+
+#wrapper-footer {
+  background: $primary;
+}
+
+.footer-note {
+  text-align: center;
+  color: white;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+img.bg-footer {
+}
+@media (min-width: 1200px) {
+  .footer-note {
+    background-image: url("https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/bg-bottom-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 125px;
+    padding: 25px;
+    margin-top: -60px;
+    color: black;
+
+    ul li {
+      display: inline-block;
+    }
+  }
+}
+/* sidebar woocommerce */
+
+.widget_product_categories {
+  margin-top: 20px;
+
+  ul.product-categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    ul.children {
+      list-style: none;
+    }
+
+    > li {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      margin-bottom: 4px;
+      border-bottom: 1px dotted $gris-clair;
+    }
+  }
+}
+
+.widget_product_categories .widget-title,
+.widget_product_search .widget-title {
+  font-size: 21px;
+}
+/* sidebar content order */
+
+.left-sidebar-page-content-order {
+  @extend .row;
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 900px) {
+  .left-sidebar-page-content-order {
+    flex-direction: inherit;
+  }
+}
+
+i {
+  font-family: FontAwesome;
+}

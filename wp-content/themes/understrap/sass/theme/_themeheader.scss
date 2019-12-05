@@ -1,0 +1,146 @@
+/* Header */
+.top-header-banner {
+  @extend .container;
+
+  &__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    @extend .d-none;
+    @extend .d-lg-block;
+    font-size: 35px;
+    color: white;
+    font-family: "tagettesregular";
+    padding-top: 20px;
+  }
+
+  &__logo {
+    padding-top: 15px;
+    margin-bottom: -60px;
+
+    img {
+      margin: auto;
+      display: block;
+    }
+  }
+
+  &__above-menu {
+    @extend .d-none;
+    @extend .d-lg-block;
+    background-image: url("https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/bg-sous-logo-1240.png");
+    height: 120px;
+    width: 100%;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    &__text--small {
+    }
+
+    &__text--big {
+    }
+  }
+}
+
+.deco-left,
+.deco-right {
+  @extend .d-none;
+  @extend .d-xl-block;
+  height: 0;
+}
+
+.deco-left img {
+  position: relative;
+  z-index: 5;
+  @include media-breakpoint-up(xl) {
+    top: -50px;
+  }
+}
+
+.deco-right {
+  float: right;
+
+  img {
+    position: relative;
+    z-index: 5;
+    @include media-breakpoint-up(xl) {
+      top: -50px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .deco-left img {
+    left: -160px;
+  }
+
+  .deco-right img {
+    left: 160px;
+  }
+}
+@media (min-width: 1300px) {
+  .deco-left img {
+    left: -150px;
+  }
+
+  .deco-right img {
+    left: 150px;
+  }
+}
+@media (min-width: 1400px) {
+  .deco-left img {
+    left: -100px;
+  }
+
+  .deco-right img {
+    left: 100px;
+  }
+}
+@media (min-width: 1500px) {
+  .deco-left img {
+    left: -50px;
+  }
+
+  .deco-right img {
+    left: 50px;
+  }
+}
+@media (min-width: 1600px) {
+  .deco-left img {
+    left: 0;
+  }
+
+  .deco-right img {
+    left: 0;
+  }
+}
+@media (min-width: 1700px) {
+  .deco-left img {
+    left: 50px;
+  }
+
+  .deco-right img {
+    left: -50px;
+  }
+}
+@media (min-width: 1800px) {
+  .deco-left img {
+    left: 120px;
+  }
+
+  .deco-right img {
+    left: -120px;
+  }
+}
+@media (min-width: 1900px) {
+  .deco-left img {
+    left: 150px;
+  }
+
+  .deco-right img {
+    left: -150px;
+  }
+}

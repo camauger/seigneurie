@@ -3,4 +3,29 @@
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
 
-$primary: #5533ff; // Thats a sample how you could change a BootStrap variable.
+//$primary: #5533ff; // Thats a sample how you could change a BootStrap variable.
+$linear-primary: linear-gradient(to bottom, rgba(158,183,74,1) 0%, rgba(111,137,25,1) 100%);
+$primary: #92be6e;
+//rgba( 158, 183, 74, 1 ); // vert seigneurie
+$vert-fonce: darken($primary, 10%);
+//rgba(107,134,18,1);
+$gris-fonce: #666;
+$gris-clair: #e3e3e3;
+$mauve: rgba( 88, 70, 137, 1 );
+$gradient-purple: linear-gradient(to bottom, rgba(163,146,206,1) 0%, rgba(120,103,167,1) 44%, rgba(88,70,137,1) 100%);
+$body-background-color: lighten($gris-clair, 10%);
+$gris-heading: #595959;
+/**/
+.btn-primary, .btn-primary:hover {
+  color: white;
+}
+.btn-outline-primary:hover {
+    color: white;
+}
+
+.mauve {
+  color: $mauve;
+}
+span.primary {
+  color: $primary;
+}

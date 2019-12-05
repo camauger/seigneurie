@@ -1,0 +1,80 @@
+nav.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 60px;
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+  }
+}
+
+.navbar-brand {
+  padding: 0; // nécessaire pour coller l'image à la navigation
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.92); // override de l'opacité normal du menu
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#navbarNavDropdown {
+  @extend .justify-content-center; // pour que les éléments de la barre de navigation soient centrés
+
+  .menu-item {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 21px;
+    opacity: 1;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .menu-item:hover {
+    background-color: $vert-fonce;
+  }
+  .current-menu-item {
+    background-color: $mauve;
+    //background: $gradient-purple;
+  }
+}
+
+/* top menu */
+.top-menu-nav {
+  @extend .nav;
+  @extend .justify-content-end;
+  background: white;
+  &__sm {
+    @extend .d-lg-none;
+    margin-bottom: 15px;
+    background: white;
+    li a {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  } // top menu en petit écran
+  &__lg {
+    padding-right: 55px;
+    margin-top: -45px;
+    float: right;
+    @extend .d-none;
+    @extend .d-lg-block;
+  } // top menu en grand écran
+}
+
+/* top top navigation */
+#menu-top-menu {
+  li:first-of-type a:before {
+    content: "\f015"; /* Home FontAwesome Unicode */
+  }
+  li:nth-of-type(2) a:before {
+    content: "\f0e0"; /* Email FontAwesome Unicode */
+  }
+  li:nth-of-type(3) a:before {
+    content: "\f07a"; /* Cart FontAwesome Unicode */
+  }
+  a:before {
+    color: $primary;
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 3px;
+  }
+}

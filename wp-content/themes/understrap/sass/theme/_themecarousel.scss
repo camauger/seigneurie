@@ -1,0 +1,31 @@
+/* carousel featured products */
+.carousel-accueil-produits {
+  margin-bottom: 20px;
+  img {
+    display: block;
+    margin: auto;
+    max-height: 300px;
+  }
+}
+.carousel-feature-inner,
+.carousel-inner {
+  @extend .container;
+}
+
+.carousel-item {
+  background: $gradient-purple;
+}
+
+.carousel-feature {
+  @extend .col-sm-12;
+  @extend .col-md-8;
+  background: $gradient-purple;
+  color: white;
+  padding: 20px;
+}
+
+.carousel-image {
+  @extend .col-sm-12;
+  @extend .col-md-4;
+  padding: 0;
+}

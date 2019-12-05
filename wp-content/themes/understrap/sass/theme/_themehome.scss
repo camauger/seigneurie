@@ -1,0 +1,156 @@
+/* carousel Accueil */
+.carousel-accueil,
+.carousel-accueil .carousel-inner,
+.carousel-accueil .item {
+  background: $gris-clair;
+  padding: 0;
+}
+
+.carousel-accueil {
+  border-bottom: 6px solid $primary;
+  margin-bottom: 2px;
+  img {
+    width: 100%;
+  }
+}
+
+//* Home page tuiles *//
+.home-cards-wrapper {
+  @extend .container;
+  margin-bottom: 20px;
+}
+.home-cards {
+  @extend .row;
+  &__half {
+    @extend .col-lg-6;
+    color: white;
+  }
+
+  &__quarter {
+    @extend .col-lg-3;
+    @extend .d-flex;
+    @extend .align-items-center;
+    flex-direction: column;
+    height: 471px;
+  }
+  a {
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  .box--large-1,
+  .box--large-2 {
+    @extend .col-12;
+    @extend .d-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 192px;
+    padding-top: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+
+  .box--large-1 {
+    border-bottom: 2px solid white;
+    background-image: url("https://seigneurieiledorleans.com/contenu/prospecteur/themes/prospecteur/images/accueil/sio-bg-seigneurie-fontaine.jpg");
+    background-position: center;
+  }
+
+  .box--large-2 {
+    border-top: 2px solid white;
+    background-image: url("https://seigneurieiledorleans.com/contenu/prospecteur/uploads/2018/02/LAVENDER-Fields.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .box--small-1,
+  .box--small-2 {
+    @extend .col-6;
+    @extend .d-flex;
+    flex-direction: column;
+    height: 107px;
+    padding: 15px;
+
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+  .box--small-1 {
+    background: $primary;
+    border-right: 1px solid white;
+  }
+
+  .box--small-2 {
+    border-left: 1px solid white;
+    background: $mauve;
+  }
+
+  span,
+  strong {
+    display: block;
+    font-size: 21px;
+  }
+  span {
+    font-weight: 300;
+  }
+  strong {
+    text-transform: uppercase;
+  }
+
+  .visit, .shop {
+    padding-top: 20px;
+  }
+  .visit {
+    background-image: url("https://seigneurieiledorleans.com/contenu/prospecteur/uploads/2018/02/600547_369392619783394_2121538967_n.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+      color: white;
+      &:hover {
+        filter: brightness(110%);
+      }
+  }
+
+  .shop {
+    text-align: center;
+    &:hover {
+      filter: brightness(110%);
+    }
+
+    span.mauve, strong.mauve {
+      font-size: 26px;
+    }
+    img {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    span {
+      color: $gris-fonce;
+    }
+    small {
+      font-size: 14px;
+    }
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+}
+
+
+.page-template-page-home {
+  #content {
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+  div.entry-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

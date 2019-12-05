@@ -14,7 +14,7 @@
                 </div>
             </a>
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
             <a href="<?php echo ($post->slideUrlOne) ?>">
                 <img src="<?php echo ($post->slideImgOne) ?>" class="d-block" alt="<?php echo ($post->slideTitleOne) ?>">
                 <div class="carousel-caption d-none d-md-block">
@@ -31,7 +31,7 @@
                     <p><?php echo ($post->slideTextOne) ?></p>
                 </div>
             </a>
-        </div>
+        </div> -->
     </div>
 
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">

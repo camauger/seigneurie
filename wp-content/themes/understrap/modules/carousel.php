@@ -6,10 +6,11 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?php echo ($post->slideImgOne) ?>" class="d-block w-100" alt="...">
+        <a href="<?php echo ($post->slideUrlOne) ?>">
+      <img src="<?php echo ($post->slideImgOne) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleOne) ?>">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h5><?php echo ($post->slideTitleOne) ?></h5>
+        <p><?php echo ($post->slideTextOne) ?></p></a>
       </div>
     </div>
     <div class="carousel-item">

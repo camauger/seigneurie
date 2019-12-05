@@ -12,24 +12,17 @@
         </div> -->
 
         <div class="carousel-item active">
-            <img class="img-responsive" src="<?php echo get_post_meta($post->ID, 'homeslider1', true); ?>" alt=""
-                title="">
+            <img class="img-responsive" src="<?php echo get_post_meta($post->ID, 'homeslider1', true); ?>" alt="" title="">
             <div class="container">
                 <div class="row">
-                    <div class="col-3"><img class="img-responsive"
-                            src="https://seigneurieiledorleans.com/wp-content/uploads/2019/06/consoude.jpg"
-                            alt="" title=""></div>
-                    <div class="col-3"><img class="img-responsive"
-                            src="https://seigneurieiledorleans.com/wp-content/uploads/2019/06/consoude-1.jpeg"
-                            alt="" title=""></div>
-                    <div class="col-3"><img class="img-responsive"
-                            src="https://seigneurieiledorleans.com/wp-content/uploads/2019/06/consoude-2.jpeg"
-                            alt="" title=""></div>
-                    <div class="col-3"><p style="color: white;">Je suis époustouflée de voir les résultats!
-                        Après avoir essayé à peu près toutes les crèmes sur le marché, rien n’a fonctionné!
-                        Seuls l’onguent de consoude et la crème à main en barre ont donné ce résultat. - Lyne Robillard</p>
-                        <a href="https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/eczema-psoriasis-cicatrisation-ecchymoses-onguent-consoude-creme-ultra-cicatrisante-brulure-anti-inflammatoire/"
-                            class="btn btn-primary btn-vert pull-left">Acheter</a>
+                    <div class="col-3"><img class="img-responsive" src="https://seigneurieiledorleans.com/wp-content/uploads/2019/06/consoude.jpg" alt="" title=""></div>
+                    <div class="col-3"><img class="img-responsive" src="https://seigneurieiledorleans.com/wp-content/uploads/2019/06/consoude-1.jpeg" alt="" title=""></div>
+                    <div class="col-3"><img class="img-responsive" src="https://seigneurieiledorleans.com/wp-content/uploads/2019/06/consoude-2.jpeg" alt="" title=""></div>
+                    <div class="col-3">
+                        <p style="color: white;">Je suis époustouflée de voir les résultats!
+                            Après avoir essayé à peu près toutes les crèmes sur le marché, rien n’a fonctionné!
+                            Seuls l’onguent de consoude et la crème à main en barre ont donné ce résultat. - Lyne Robillard</p>
+                        <a href="https://seigneurieiledorleans.com/boutique/apothicaire-hildgard/eczema-psoriasis-cicatrisation-ecchymoses-onguent-consoude-creme-ultra-cicatrisante-brulure-anti-inflammatoire/" class="btn btn-primary btn-vert pull-left">Acheter</a>
                     </div>
                 </div>
             </div>

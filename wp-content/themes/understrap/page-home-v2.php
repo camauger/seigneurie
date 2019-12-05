@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Accueil
+ * Template Name: Accueil V2
  *
  *
  * @package understrap
@@ -26,7 +26,7 @@ $container = get_theme_mod('understrap_container_type');
 
 
             <main class="site-main" id="main">
-                <?php get_template_part('global-templates/carousel'); ?>
+                <?php get_template_part('modules/carousel'); ?>
                 <div class="home-cards-wrapper">
                     <div class="home-cards">
                         <div class="home-cards__half">

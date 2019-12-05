@@ -102,18 +102,20 @@
     text-transform: uppercase;
   }
 
-  .visit, .shop {
+  .visit,
+  .shop {
     padding-top: 20px;
   }
   .visit {
     background-image: url("https://seigneurieiledorleans.com/wp-content/themes/understrap/images/accueil/sio-fontaine.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    justify-content: center;
     text-align: center;
-      color: white;
-      &:hover {
-        filter: brightness(110%);
-      }
+    color: white;
+    &:hover {
+      filter: brightness(110%);
+    }
   }
 
   .shop {
@@ -122,7 +124,8 @@
       filter: brightness(110%);
     }
 
-    span.mauve, strong.mauve {
+    span.mauve,
+    strong.mauve {
       font-size: 26px;
     }
     img {
@@ -140,9 +143,7 @@
   .uppercase {
     text-transform: uppercase;
   }
-
 }
-
 
 .page-template-page-home {
   #content {

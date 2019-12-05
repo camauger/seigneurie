@@ -68,7 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                             <a href="/boutique">
                                 <span class="mauve">La boutique</span>
                                 <strong class="mauve">en ligne</strong>
-                                <img src="https://seigneurieiledorleans.com/wp-content/themes/understrapimages/accueil/sio-bg-boutique.jpg"
+                                <img src="https://seigneurieiledorleans.com/wp-content/themes/understrap/images/accueil/sio-bg-boutique.jpg"
                                     class="img-responsive" alt="La boutique en ligne" title="La boutique en ligne">
                                 <span class="uppercase primary">Livraison gratuite</span>
                                 <span>à l'achat de 80$ et +<br>

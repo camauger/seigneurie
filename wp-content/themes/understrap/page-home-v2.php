@@ -26,8 +26,8 @@ $container = get_theme_mod('understrap_container_type');
 
 
             <main class="site-main" id="main">
-                <!-- <?php get_template_part('modules/carousel'); ?> -->
-                <?php get_template_part('global-templats/hero'); ?>
+                
+                <?php get_template_part('global-templates/hero'); ?>
                 <div class="home-cards-wrapper">
                     <div class="home-cards">
                         <div class="home-cards__half">

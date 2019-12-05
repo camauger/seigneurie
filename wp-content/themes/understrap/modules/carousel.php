@@ -14,15 +14,18 @@
                 </div>
             </a>
         </div>
-        <div class="carousel-item">
-            <a href="<?php echo ($post->slideUrlTwo) ?>">
-                <img src="<?php echo ($post->slideImgTwo) ?>" class="d-block" alt="<?php echo ($post->slideTitleTwo) ?>">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5><?php echo ($post->slideTitleTwo) ?></h5>
-                    <p><?php echo ($post->slideTextTwo) ?></p>
-                </div>
-            </a>
-        </div>
+        <?php if ($post->slideImgTwo != '') { ?>
+            <div class="carousel-item">
+                <a href="<?php echo ($post->slideUrlTwo) ?>">
+                    <img src="<?php echo ($post->slideImgTwo) ?>" class="d-block" alt="<?php echo ($post->slideTitleTwo) ?>">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><?php echo ($post->slideTitleTwo) ?></h5>
+                        <p><?php echo ($post->slideTextTwo) ?></p>
+                    </div>
+                </a>
+            </div>
+        <?php } ?>
+        <?php if ($post->slideImgThree != '') { ?>
         <div class="carousel-item">
             <a href="<?php echo ($post->slideUrlThree) ?>">
                 <img src="<?php echo ($post->slideImgThree) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleThree) ?>">
@@ -32,6 +35,7 @@
                 </div>
             </a>
         </div>
+        <?php } ?>
     </div>
 
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">

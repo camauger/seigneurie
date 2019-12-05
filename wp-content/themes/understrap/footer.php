@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer.
  *
@@ -7,34 +8,78 @@
  * @package understrap
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod('understrap_container_type');
 ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
+<?php get_template_part('sidebar-templates/sidebar', 'footerfull'); ?>
 
 <div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="<?php echo esc_attr($container); ?>">
 
 		<div class="row">
 
 			<div class="col-md-12">
 
-				<footer class="site-footer" id="colophon">
+				<footer class="site-footer footer" id="colophon">
 
-					<div class="site-info">
 
-						<?php understrap_site_info(); ?>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="visible-lg-block">
+									<img class="img-responsive bg-footer" src="<?php bloginfo('template_directory'); ?>/images/bg-bottom-2.png" alt="" title="">
+									<div class="contenu-footer hidden-sm">
+										<p><?php echo (ICL_LANGUAGE_CODE == 'en') ? 'All rights reserved' : 'Tous droits réservés'; ?> &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> -
+											<a href="mailto:info@seigneurieiledorleans.com" title="info@seigneurieiledorleans.com">info@seigneurieiledorleans.com</a> -
+											<?php echo (ICL_LANGUAGE_CODE == 'en') ? 'Tel' : 'Tél'; ?>. : 418 829-0476</p>
+									</div>
+								</div>
+								<div class="visible-md-block">
+									<img class="center-block img-responsive" style="margin-top: -3em;" src="<?php bloginfo('template_directory'); ?>/images/sio-logo-footer.png" alt="" title="">
+									<div class="text-center">
+										<p>Tous droits réservés &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> -
+											<a style="color: #fff;" href="mailto:info@seigneurieiledorleans.com" title="info@seigneurieiledorleans.com">info@seigneurieiledorleans.com</a> -
+											Tél. : <a style="color: #fff !important;" tabIndex="-1" href="tel:14188290476">418 829-0476</a></p>
+									</div>
+								</div>
+								<div class="visible-sm-block">
+									<div class="text-center">
+										<p style="color: #fff; padding-top: .5em;"><?php bloginfo('name'); ?>
+											<br />
+											<?php echo (ICL_LANGUAGE_CODE == 'en') ? 'All rights reserved' : 'Tous droits réservés'; ?> &copy; <?php echo date('Y'); ?>
+											<br />
+											<a style="color: #fff;" href="mailto:info@seigneurieiledorleans.com" title="info@seigneurieiledorleans.com">info@seigneurieiledorleans.com</a>
+											<br />
+											<a style="color: #fff !important;" tabIndex="-1" href="tel:14188290476">418 829-0476</a>
+										</p>
+									</div>
+								</div>
+								<div class="visible-xs-block">
+									<div class="text-center">
+										<p style="color: #fff; padding-top: .5em;"><?php bloginfo('name'); ?>
+											<br />
+											<?php echo (ICL_LANGUAGE_CODE == 'en') ? 'All rights reserved' : 'Tous droits réservés'; ?> &copy; <?php echo date('Y'); ?>
+											<br />
+											<a style="color: #fff;" href="mailto:info@seigneurieiledorleans.com" title="info@seigneurieiledorleans.com">info@seigneurieiledorleans.com</a>
+											<br />
+											<a style="color: #fff !important;" tabIndex="-1" href="tel:14188290476">418 829-0476</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
 
-					</div><!-- .site-info -->
+				
 
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
+			</div>
+			<!--col end -->
 
 		</div><!-- row end -->
 
@@ -49,4 +94,3 @@ $container = get_theme_mod( 'understrap_container_type' );
 </body>
 
 </html>
-

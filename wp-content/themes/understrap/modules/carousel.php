@@ -13,20 +13,19 @@
                     <p><?php echo ($post->slideTextOne) ?></p>
             </a>
         </div>
-    </div>
-    <div class="carousel-item">
+
+        <div class="carousel-item">
             <a href="<?php echo ($post->slideUrlOne) ?>">
-                <div
-                class="container">
-                <div class="row">
-                <div class="col-6">
-                <img src="<?php echo ($post->slideImgOne) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleOne) ?>">
-                </div>
-                <div class="col-6">
-                    <h5><?php echo ($post->slideTitleOne) ?></h5>
-                    <p><?php echo ($post->slideTextOne) ?></p>
-                </div>
-            </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="<?php echo ($post->slideImgOne) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleOne) ?>">
+                        </div>
+                        <div class="col-6">
+                            <h5><?php echo ($post->slideTitleOne) ?></h5>
+                            <p><?php echo ($post->slideTextOne) ?></p>
+                        </div>
+                    </div>
             </a>
         </div>
         <div class="carousel-item active">
@@ -37,7 +36,9 @@
                     <p><?php echo ($post->slideTextOne) ?></p>
             </a>
         </div>
+    </div>
 </div>
+
 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>

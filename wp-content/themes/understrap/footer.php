@@ -34,8 +34,6 @@ $container = get_theme_mod('understrap_container_type');
 								<div class="visible-lg-block">
 									<img class="img-responsive bg-footer" src="<?php bloginfo('template_directory'); ?>/images/bg-bottom-2.png" alt="" title="">
 								</div>
-
-
 								<div class="visible-xs-block">
 									<div class="text-center">
 										<p style="color: #fff; padding-top: .5em;"><?php bloginfo('name'); ?>

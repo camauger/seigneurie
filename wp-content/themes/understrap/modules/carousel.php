@@ -1,8 +1,12 @@
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <?php if ($post->slideImgTwo != '') { ?>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <?php } ?>
+        <?php if ($post->slideImgThree != '') { ?>
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <?php } ?>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -17,7 +21,7 @@
         <?php if ($post->slideImgTwo != '') { ?>
             <div class="carousel-item">
                 <a href="<?php echo ($post->slideUrlTwo) ?>">
-                    <img src="<?php echo ($post->slideImgTwo) ?>" class="d-block" alt="<?php echo ($post->slideTitleTwo) ?>">
+                    <img src="<?php echo ($post->slideImgTwo) ?>" class="d-block w-100" alt="<?php echo ($post->slideTitleTwo) ?>">
                     <div class="carousel-caption d-none d-md-block">
                         <h5><?php echo ($post->slideTitleTwo) ?></h5>
                         <p><?php echo ($post->slideTextTwo) ?></p>

@@ -24,7 +24,7 @@ $sidebar_pos = get_theme_mod('understrap_sidebar_position');
 	<?php else : ?>
 		<div class="col-md-4 widget-area" id="left-sidebar" role="complementary">
 		<?php endif;
-		if (is_shop()) {
+		if (is_woocommerce()) {
 			dynamic_sidebar('right-sidebar');
 		} else {
 			dynamic_sidebar('left-sidebar');
